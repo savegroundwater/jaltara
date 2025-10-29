@@ -1,4 +1,4 @@
-Village	Pits	Lattitude	Longitude
+Village	Pits	Latitude	Longitude
 Karnataka-Vijayanagar-Kudligi-null-Poojarahalli	32	14.61658349	76.54514897
 Karnataka-Vijayanagar-Kotturu-null-Kandagal	13	14.88346411	76.28691526
 Karnataka-Vijayanagar-Harapanahalli-null-Kadathi	1	14.9733367	76.319545
@@ -139,4 +139,5 @@ Maharashtra-Jalna-Mantha-null-Sirpur	5	19.89484574	76.44487892
 Vazhar Sarkate	126	19.90361667	76.36989603
 Maharashtra-Jalna-Mantha-null-Wadgaon Sarhadu	164	19.90888481	76.47708687
 Maharashtra-Jalna-Badnapur-null-Dagadwadi	71	19.95436637	75.88540149
+
 Maharashtra-Jalna-Badnapur-null-Asola	4	19.95986113	75.83532503
