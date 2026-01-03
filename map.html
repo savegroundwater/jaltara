@@ -212,152 +212,166 @@
     let currentCluster = null;
     let currentClusterGroup = null;
 
-    // fetch pit data
-    fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/d25ca6ebcef06176a284c7eb0c49c106f56f47ba/pit_data.txt')
+    // fetch village data
+    fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/main/village_data.txt')
       .then(res => res.text())
       .then(text => {
         const lines = text.trim().split('\n');
         lines.shift(); // remove header row
 
         lines.forEach(line => {
-          const columns = line.split('\t');
-          // make sure data is right
-          const pitLat = parseFloat((columns[1] || '').trim()) || '';
-          const pitLon = parseFloat((columns[2] || '').trim()) || '';
-          const village = (columns[3] || '').trim() ? toTitleCase(columns[3].trim()) : '';
-          const date = (columns[5] || '').trim();
-          const image = (columns[6] || '').trim();
-          
-          if ( !isNaN(pitLat) && !isNaN(pitLon) ) {
-            // track bounds
-            minLat = Math.min(minLat, pitLat);
-            maxLat = Math.max(maxLat, pitLat);
-            minLon = Math.min(minLon, pitLon);
-            maxLon = Math.max(maxLon, pitLon);
-
-            // popup content
-            let popupContent = '<div style="text-align:center;">';
-            if ( image && image !== '--' ) {
-              popupContent += `
-                <div style="width:150px; height:150px; overflow:hidden; margin:0 auto;">
-                  <img src="${image}" style="width:150px; height:150px; object-fit:cover;">
-                </div><br>
-              `;
-            }
-            if ( village && village !== '--' ) {
-              popupContent += `<strong>Village:</strong> ${village}<br>`;
-            }
-            if ( date && date !== '--' ) {
-              popupContent += `<strong>Date:</strong> ${date}`;
-            }
-            popupContent += '</div>';
-
-            const villagePopup = `<strong>Village:</strong> ${village}<br>`;
-
-            // make the marker look like a cluster with only village in popup
-            const marker = L.marker([pitLat, pitLon], { icon: clusterStyleIcon });
-            marker.villageName = village;
-            marker.villagePopup = villagePopup;
-            marker.popupContent = popupContent;
-
-            marker.bindPopup(marker.villagePopup);
-            
-            marker.on('mouseover', function() { this.openPopup(); });
-            marker.on('mouseout', function() { this.closePopup(); });
-            
-// marker clicks
-            marker.on('click', function() {
-              if ( (currentCluster == null || marker.villageName != currentCluster.villageName) && expandedMarkers.length == 0 ) {
-                clearMap();
-                
-                this.setIcon(expandedMarkerIcon);
-                this.bindPopup(this.popupContent);
-  
-                const coords = this.getLatLng();
-  
-                map.flyTo([coords.lat, coords.lng], 16, { animate: true, duration: 0.5 });
-                boundsZoom = 16;
-                
-                if ( !expandedMarkers.includes(this) ) {
-                  expandedMarkers.push(this);       // add it to expandedMarkers if not already there
-                }
-              } else if ( expandedMarkers.length > 0 || marker.villageName == currentCluster.villageName ) {
-                clearMap();
-              }
-              });
-
-// zoomend
-            map.on('zoomend', function() {
-              if ( boundsZoom != null && map.getZoom() < (boundsZoom - 1) ) {
-                clearMap();
-              }
-            });
-
-            // make sure cluster exists for village
-            if ( !clusters[village] && (currentCluster == null || currentCluster.villageName != village) ) {
-              clusters[village] = L.markerClusterGroup({
-                maxClusterRadius: 999999,
-                disableClusteringAtZoom: 20, // never uncluster - this is controlled manually in clusterclick event
-                spiderfyOnMaxZoom: false,
-                zoomToBoundsOnClick: true,
-                showCoverageOnHover: false,
-// cluster iconcreatefunction
-                iconCreateFunction: function(cluster) {
-                  return defaultClusterIcon(cluster);
-                }
-              });
-
-              clusters[village].villageName = village;
-
-              clusters[village].on('clustermouseover', function(e) {
-                e.layer.bindPopup(`<b>Village:</b> ${village}`).openPopup();
-              });
-
-              clusters[village].on('clustermouseout', function(e) {
-                e.layer.closePopup();
-              });
-
-// cluster clicks
-              clusters[village].on('clusterclick', function(e) {
-                clearMap();
-                
-                currentCluster = e.layer;
-                currentCluster.villageName = village;
-                currentClusterGroup = clusters[village];
-                
-                const currentMarkers = currentCluster.getAllChildMarkers(); // get all markers in this cluster
-                currentMarkers.forEach(marker => {
-                  marker.setIcon(expandedMarkerIcon);
-                  marker.bindPopup(marker.popupContent);
-                });
-
-              map.removeLayer(currentClusterGroup);
-                
-              currentUnclusteredMarkers = L.layerGroup(currentMarkers);
-              currentUnclusteredMarkers.addTo(map)
-
-              map.flyToBounds(currentCluster.getBounds(), { padding: [50, 50], maxZoom: 18, animate: true, duration: 0.5 });
-              boundsZoom = map.getBoundsZoom(currentCluster.getBounds());
-              
-              });
-  
-              map.addLayer(clusters[village]);
-              
-            }
-
-            // add marker to that village's cluster
-            clusters[village].addLayer(marker);
-
-          }
+        const columns = line.split('\t');
+        console.log('j');
         });
-
-        // fit map to bounds
-        const bounds = L.latLngBounds(
-          L.latLng(minLat - 1, minLon - 1),
-          L.latLng(maxLat + 1, maxLon + 1)
-        );
-        map.fitBounds(bounds);
       });
+
+    // fetch pit data
+//     fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/d25ca6ebcef06176a284c7eb0c49c106f56f47ba/pit_data.txt')
+//       .then(res => res.text())
+//       .then(text => {
+//         const lines = text.trim().split('\n');
+//         lines.shift(); // remove header row
+
+//         lines.forEach(line => {
+//           const columns = line.split('\t');
+//           // make sure data is right
+//           const pitLat = parseFloat((columns[1] || '').trim()) || '';
+//           const pitLon = parseFloat((columns[2] || '').trim()) || '';
+//           const village = (columns[3] || '').trim() ? toTitleCase(columns[3].trim()) : '';
+//           const date = (columns[5] || '').trim();
+//           const image = (columns[6] || '').trim();
+          
+//           if ( !isNaN(pitLat) && !isNaN(pitLon) ) {
+//             // track bounds
+//             minLat = Math.min(minLat, pitLat);
+//             maxLat = Math.max(maxLat, pitLat);
+//             minLon = Math.min(minLon, pitLon);
+//             maxLon = Math.max(maxLon, pitLon);
+
+//             // popup content
+//             let popupContent = '<div style="text-align:center;">';
+//             if ( image && image !== '--' ) {
+//               popupContent += `
+//                 <div style="width:150px; height:150px; overflow:hidden; margin:0 auto;">
+//                   <img src="${image}" style="width:150px; height:150px; object-fit:cover;">
+//                 </div><br>
+//               `;
+//             }
+//             if ( village && village !== '--' ) {
+//               popupContent += `<strong>Village:</strong> ${village}<br>`;
+//             }
+//             if ( date && date !== '--' ) {
+//               popupContent += `<strong>Date:</strong> ${date}`;
+//             }
+//             popupContent += '</div>';
+
+//             const villagePopup = `<strong>Village:</strong> ${village}<br>`;
+
+//             // make the marker look like a cluster with only village in popup
+//             const marker = L.marker([pitLat, pitLon], { icon: clusterStyleIcon });
+//             marker.villageName = village;
+//             marker.villagePopup = villagePopup;
+//             marker.popupContent = popupContent;
+
+//             marker.bindPopup(marker.villagePopup);
+            
+//             marker.on('mouseover', function() { this.openPopup(); });
+//             marker.on('mouseout', function() { this.closePopup(); });
+            
+// // marker clicks
+//             marker.on('click', function() {
+//               if ( (currentCluster == null || marker.villageName != currentCluster.villageName) && expandedMarkers.length == 0 ) {
+//                 clearMap();
+                
+//                 this.setIcon(expandedMarkerIcon);
+//                 this.bindPopup(this.popupContent);
+  
+//                 const coords = this.getLatLng();
+  
+//                 map.flyTo([coords.lat, coords.lng], 16, { animate: true, duration: 0.5 });
+//                 boundsZoom = 16;
+                
+//                 if ( !expandedMarkers.includes(this) ) {
+//                   expandedMarkers.push(this);       // add it to expandedMarkers if not already there
+//                 }
+//               } else if ( expandedMarkers.length > 0 || marker.villageName == currentCluster.villageName ) {
+//                 clearMap();
+//               }
+//               });
+
+// // zoomend
+//             map.on('zoomend', function() {
+//               if ( boundsZoom != null && map.getZoom() < (boundsZoom - 1) ) {
+//                 clearMap();
+//               }
+//             });
+
+//             // make sure cluster exists for village
+//             if ( !clusters[village] && (currentCluster == null || currentCluster.villageName != village) ) {
+//               clusters[village] = L.markerClusterGroup({
+//                 maxClusterRadius: 999999,
+//                 disableClusteringAtZoom: 20, // never uncluster - this is controlled manually in clusterclick event
+//                 spiderfyOnMaxZoom: false,
+//                 zoomToBoundsOnClick: true,
+//                 showCoverageOnHover: false,
+// // cluster iconcreatefunction
+//                 iconCreateFunction: function(cluster) {
+//                   return defaultClusterIcon(cluster);
+//                 }
+//               });
+
+//               clusters[village].villageName = village;
+
+//               clusters[village].on('clustermouseover', function(e) {
+//                 e.layer.bindPopup(`<b>Village:</b> ${village}`).openPopup();
+//               });
+
+//               clusters[village].on('clustermouseout', function(e) {
+//                 e.layer.closePopup();
+//               });
+
+// // cluster clicks
+//               clusters[village].on('clusterclick', function(e) {
+//                 clearMap();
+                
+//                 currentCluster = e.layer;
+//                 currentCluster.villageName = village;
+//                 currentClusterGroup = clusters[village];
+                
+//                 const currentMarkers = currentCluster.getAllChildMarkers(); // get all markers in this cluster
+//                 currentMarkers.forEach(marker => {
+//                   marker.setIcon(expandedMarkerIcon);
+//                   marker.bindPopup(marker.popupContent);
+//                 });
+
+//               map.removeLayer(currentClusterGroup);
+                
+//               currentUnclusteredMarkers = L.layerGroup(currentMarkers);
+//               currentUnclusteredMarkers.addTo(map)
+
+//               map.flyToBounds(currentCluster.getBounds(), { padding: [50, 50], maxZoom: 18, animate: true, duration: 0.5 });
+//               boundsZoom = map.getBoundsZoom(currentCluster.getBounds());
+              
+//               });
+  
+//               map.addLayer(clusters[village]);
+              
+//             }
+
+//             // add marker to that village's cluster
+//             clusters[village].addLayer(marker);
+
+//           }
+//         });
+
+//         // fit map to bounds
+//         const bounds = L.latLngBounds(
+//           L.latLng(minLat - 1, minLon - 1),
+//           L.latLng(maxLat + 1, maxLon + 1)
+//         );
+//         map.fitBounds(bounds);
+//       });
   </script>
 </body>
 </html>
+
