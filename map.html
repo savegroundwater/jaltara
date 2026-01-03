@@ -115,6 +115,28 @@
       className: "village-cluster-icon",
       iconSize: [40, 40]
     });
+
+    // village markers
+    const villageMarkerIcon = function(pitsNum) {
+      return L.divIcon({
+      html: `<div style="
+               background:#009C9D; 
+               color:white; 
+               border-radius:50%;
+               border: 1px solid #004E4F;
+               width:40px; 
+               height:40px; 
+               display:flex; 
+               align-items:center; 
+               justify-content:center; 
+               font-family: 'Courier New', monospace;
+               font-size:14px;">
+               ${pitsNum}
+             </div>`,
+      className: "village-marker-icon",
+      iconSize: [40, 40]
+      });
+    };
     
     // icon style after expanding
     const expandedMarkerIcon = L.divIcon({
@@ -220,9 +242,33 @@
         lines.shift(); // remove header row
 
         lines.forEach(line => {
-        const columns = line.split('\t');
-        console.log('j');
-        });
+          const columns = line.split('\t');
+          // get data for each village
+          const villageName = (columns[0] || '').trim() ? toTitleCase(columns[0].trim()) : '';
+          const villagePitsNum = parseFloat(columns[1])
+          const villageLat = parseFloat(columns[2]);
+          const villageLon = parseFloat(columns[3]);
+
+          // track bounds
+          if ( !isNaN(villageLat) && !isNaN(villageLon) ) {
+            minLat = Math.min(minLat, villageLat);
+            maxLat = Math.max(maxLat, villageLat);
+            minLon = Math.min(minLon, villageLon);
+            maxLon = Math.max(maxLon, villageLon);
+          } else {
+            return
+          }
+
+        // popups
+        const villagePopup = `<strong>Village:</strong> ${villageName}<br>`;
+
+        // village markers
+        const marker = L.marker([villageLat, villageLon], { icon: villageMarkerIcon(villagePitsNum) });
+        marker.bindPopup(villagePopup);
+        marker.on('mouseover', function() { this.openPopup(); });
+        marker.on('mouseout', function() { this.closePopup(); });
+
+        marker.addTo(map);
       });
 
     // fetch pit data
@@ -241,12 +287,12 @@
 //           const date = (columns[5] || '').trim();
 //           const image = (columns[6] || '').trim();
           
-//           if ( !isNaN(pitLat) && !isNaN(pitLon) ) {
-//             // track bounds
-//             minLat = Math.min(minLat, pitLat);
-//             maxLat = Math.max(maxLat, pitLat);
-//             minLon = Math.min(minLon, pitLon);
-//             maxLon = Math.max(maxLon, pitLon);
+             // don't need anymore                                                        //           if ( !isNaN(pitLat) && !isNaN(pitLon) ) {
+                                                                                          //             // track bounds
+                                                                                          //             minLat = Math.min(minLat, pitLat);
+                                                                                          //             maxLat = Math.max(maxLat, pitLat);
+                                                                                          //             minLon = Math.min(minLon, pitLon);
+                                                                                          //             maxLon = Math.max(maxLon, pitLon);
 
 //             // popup content
 //             let popupContent = '<div style="text-align:center;">';
@@ -273,10 +319,10 @@
 //             marker.villagePopup = villagePopup;
 //             marker.popupContent = popupContent;
 
-//             marker.bindPopup(marker.villagePopup);
+            // marker.bindPopup(marker.villagePopup);
             
-//             marker.on('mouseover', function() { this.openPopup(); });
-//             marker.on('mouseout', function() { this.closePopup(); });
+            // marker.on('mouseover', function() { this.openPopup(); });
+            // marker.on('mouseout', function() { this.closePopup(); });
             
 // // marker clicks
 //             marker.on('click', function() {
@@ -364,14 +410,15 @@
 //           }
 //         });
 
-//         // fit map to bounds
-//         const bounds = L.latLngBounds(
-//           L.latLng(minLat - 1, minLon - 1),
-//           L.latLng(maxLat + 1, maxLon + 1)
-//         );
-//         map.fitBounds(bounds);
-//       });
+        // fit map to bounds
+        const bounds = L.latLngBounds(
+          L.latLng(minLat - 1, minLon - 1),
+          L.latLng(maxLat + 1, maxLon + 1)
+        );
+        map.fitBounds(bounds);
+      });
   </script>
 </body>
 </html>
+
 
