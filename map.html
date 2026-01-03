@@ -234,6 +234,9 @@
     let currentCluster = null;
     let currentClusterGroup = null;
 
+    // create temporary village markers layer
+    const villageLayer = L.layerGroup().addTo(map);
+
     // fetch village data
     fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/main/village_data.txt')
       .then(res => res.text())
@@ -268,7 +271,7 @@
         marker.on('mouseover', function() { this.openPopup(); });
         marker.on('mouseout', function() { this.closePopup(); });
 
-        marker.addTo(map);
+        marker.addTo(villageLayer);
       });
 
     // fetch pit data
@@ -420,5 +423,6 @@
   </script>
 </body>
 </html>
+
 
 
