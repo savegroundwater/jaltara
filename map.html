@@ -252,6 +252,9 @@
     // layer for currently displayed pits
     const pitLayer = L.layerGroup().addTo(map);
 
+    // create the pit canvas renderer only when a village is opened
+    let pitRenderer = null;
+
     // prevents an older click from overwriting a newer click
     let activeLoadId = 0;
 
@@ -422,9 +425,27 @@
               return;
             }
 
-            const marker = L.marker(
+            // use canvas for pit dots when available
+            if ( pitRenderer == null && typeof L.canvas === 'function' ) {
+              pitRenderer = L.canvas({ padding: 0.5 });
+            }
+
+            const markerOptions = {
+              radius: 7,
+              color: '#009C9D',
+              weight: 1,
+              opacity: 1,
+              fillColor: '#80CECE',
+              fillOpacity: 1
+            };
+
+            if ( pitRenderer != null ) {
+              markerOptions.renderer = pitRenderer;
+            }
+
+            const marker = L.circleMarker(
               [pitLat, pitLon],
-              { icon: expandedMarkerIcon }
+              markerOptions
             );
 
             marker.bindPopup(
