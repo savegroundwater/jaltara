@@ -418,7 +418,6 @@
         }
 
         const displayedVillageNames = new Set();
-        let displayedPitCount = 0;
 
         loadedVillages.forEach(result => {
           result.pits.forEach(pit => {
@@ -443,20 +442,22 @@
             }
 
             displayedVillageNames.add(result.village.name);
-            displayedPitCount++;
+
+            const isOwnVillage = result.village.name === village.name;
 
             // use canvas for pit dots when available
             if ( pitRenderer == null && typeof L.canvas === 'function' ) {
               pitRenderer = L.canvas({ padding: 0.5 });
             }
 
+            // make neighboring village pits less prominent
             const markerOptions = {
               radius: 7,
               color: '#009C9D',
               weight: 1,
-              opacity: 1,
+              opacity: isOwnVillage ? 1 : 0.4,
               fillColor: '#80CECE',
-              fillOpacity: 1
+              fillOpacity: isOwnVillage ? 1 : 0.35
             };
 
             if ( pitRenderer != null ) {
@@ -493,13 +494,6 @@
         displayedVillageNames.forEach(villageName => {
           hideVillageMarker(villageName);
         });
-
-        // remember the exact number of pits this village displays
-        if ( currentVillageMarker != null ) {
-          currentVillageMarker.setIcon(
-            villageMarkerIcon(displayedPitCount)
-          );
-        }
 
         // store the zoom level so zooming back out closes the village
         boundsZoom = Math.min(
