@@ -63,16 +63,16 @@
       // remove all currently displayed pits
       pitLayer.clearLayers();
 
-      // restore the village marker that was hidden when opened
-      if ( currentVillageMarker != null ) {
-        if ( !villageLayer.hasLayer(currentVillageMarker) ) {
-          villageLayer.addLayer(currentVillageMarker);
+      // restore every village marker hidden while the village was open
+      hiddenVillageMarkers.forEach(marker => {
+        if ( !villageLayer.hasLayer(marker) ) {
+          villageLayer.addLayer(marker);
         }
+      });
 
-        currentVillageMarker = null;
-      }
-
+      hiddenVillageMarkers.clear();
       currentVillage = null;
+      currentVillageMarker = null;
       boundsZoom = null;
     }
 
@@ -258,9 +258,24 @@
     // prevents an older click from overwriting a newer click
     let activeLoadId = 0;
 
-    // store the currently opened village and its hidden marker
+    // store village markers so they can be hidden and restored
+    const villageMarkersByName = new Map();
+    const hiddenVillageMarkers = new Set();
+
+    // store the currently opened village and its marker
     let currentVillage = null;
     let currentVillageMarker = null;
+
+    // hide a village marker while any of its pits are expanded
+    function hideVillageMarker(villageName) {
+      const marker = villageMarkersByName.get(villageName);
+
+      if ( marker && villageLayer.hasLayer(marker) ) {
+        marker.closePopup();
+        villageLayer.removeLayer(marker);
+        hiddenVillageMarkers.add(marker);
+      }
+    }
 
     // convert stored village bounds into leaflet bounds
     function getVillageBounds(village) {
@@ -365,8 +380,7 @@
       currentVillageMarker = villageMarker;
 
       // hide the clicked village marker while its pits are open
-      villageMarker.closePopup();
-      villageLayer.removeLayer(villageMarker);
+      hideVillageMarker(village.name);
 
       const loadId = ++activeLoadId;
 
@@ -403,6 +417,9 @@
           return;
         }
 
+        const displayedVillageNames = new Set();
+        let displayedPitCount = 0;
+
         loadedVillages.forEach(result => {
           result.pits.forEach(pit => {
             const pitLat = Number(pit.lat);
@@ -424,6 +441,9 @@
             if ( !shouldDisplay ) {
               return;
             }
+
+            displayedVillageNames.add(result.village.name);
+            displayedPitCount++;
 
             // use canvas for pit dots when available
             if ( pitRenderer == null && typeof L.canvas === 'function' ) {
@@ -468,6 +488,18 @@
             marker.addTo(pitLayer);
           });
         });
+
+        // hide every village whose pits are currently displayed
+        displayedVillageNames.forEach(villageName => {
+          hideVillageMarker(villageName);
+        });
+
+        // remember the exact number of pits this village displays
+        if ( currentVillageMarker != null ) {
+          currentVillageMarker.setIcon(
+            villageMarkerIcon(displayedPitCount)
+          );
+        }
 
         // store the zoom level so zooming back out closes the village
         boundsZoom = Math.min(
@@ -552,6 +584,7 @@
 
           marker.villageData = village;
           marker.bindPopup(villagePopup);
+          villageMarkersByName.set(village.name, marker);
 
           marker.on('mouseover', function() {
             this.openPopup();
