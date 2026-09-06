@@ -57,24 +57,22 @@
     }
 
     function clearMap() {
-      expandedMarkers.forEach(m => {
-        m.setIcon(clusterStyleIcon);
-        m.bindPopup(m.villagePopup);
-        m.closePopup();
-      });
+      // invalidate any pit loading still in progress
+      activeLoadId++;
 
-      expandedMarkers.length = 0;
+      // remove all currently displayed pits
+      pitLayer.clearLayers();
 
-      if ( currentUnclusteredMarkers != null && currentCluster != null ) {
-        currentUnclusteredMarkers.remove();
-        currentUnclusteredMarkers = null;
+      // restore the village marker that was hidden when opened
+      if ( currentVillageMarker != null ) {
+        if ( !villageLayer.hasLayer(currentVillageMarker) ) {
+          villageLayer.addLayer(currentVillageMarker);
+        }
 
-        map.addLayer(currentClusterGroup);
-
-        currentClusterGroup = null;
-        currentCluster = null;
+        currentVillageMarker = null;
       }
 
+      currentVillage = null;
       boundsZoom = null;
     }
 
@@ -257,6 +255,10 @@
     // prevents an older click from overwriting a newer click
     let activeLoadId = 0;
 
+    // store the currently opened village and its hidden marker
+    let currentVillage = null;
+    let currentVillageMarker = null;
+
     // convert stored village bounds into leaflet bounds
     function getVillageBounds(village) {
       if ( !village.bounds ) {
@@ -345,7 +347,7 @@
     }
 
     // load and display pits for a clicked village
-    async function openVillage(village) {
+    async function openVillage(village, villageMarker) {
       const clickedBounds = getVillageBounds(village);
 
       if ( !clickedBounds ) {
@@ -353,10 +355,17 @@
         return;
       }
 
-      const loadId = ++activeLoadId;
+      // close any previously opened village first
+      clearMap();
 
-      // remove pits from the previously opened village
-      pitLayer.clearLayers();
+      currentVillage = village;
+      currentVillageMarker = villageMarker;
+
+      // hide the clicked village marker while its pits are open
+      villageMarker.closePopup();
+      villageLayer.removeLayer(villageMarker);
+
+      const loadId = ++activeLoadId;
 
       // find villages whose pit bounds overlap the clicked village
       const nearbyVillages = villageData.filter(candidate => {
@@ -430,9 +439,20 @@
               this.closePopup();
             });
 
+            // clicking any expanded pit closes the current village
+            marker.on('click', function() {
+              clearMap();
+            });
+
             marker.addTo(pitLayer);
           });
         });
+
+        // store the zoom level so zooming back out closes the village
+        boundsZoom = Math.min(
+          map.getBoundsZoom(clickedBounds),
+          18
+        );
 
         // zoom to the clicked village's pit bounds
         map.flyToBounds(
@@ -450,8 +470,20 @@
           `failed to open ${village.name}:`,
           error
         );
+
+        clearMap();
       }
     }
+
+    // close the open village if the user zooms back out
+    map.on('zoomend', function() {
+      if (
+        boundsZoom != null &&
+        map.getZoom() < (boundsZoom - 1)
+      ) {
+        clearMap();
+      }
+    });
 
     // fetch lightweight village index
     fetch(
@@ -509,7 +541,7 @@
           });
 
           marker.on('click', function() {
-            openVillage(village);
+            openVillage(village, marker);
           });
 
           marker.addTo(villageLayer);
