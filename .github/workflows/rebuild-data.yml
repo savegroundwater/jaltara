@@ -1,0 +1,40 @@
+name: rebuild map data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/pit_data.txt"
+      - "data/village_data.txt"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: rebuild village files
+        run: python data/build_village_pit_files.py
+
+      - name: commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/village_index.json data/pits_by_village
+          git diff --cached --quiet && exit 0
+          git commit -m "Rebuild map data"
+          git push
+          
