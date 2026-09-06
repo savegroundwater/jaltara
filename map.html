@@ -32,17 +32,20 @@
       height: 100%;
       margin: 0;
     }
+
     .leaflet-container {
       height: 800px;
       width: 1600px;
       max-width: 100%;
       max-height: 100%;
     }
+
     .invisible-cluster-icon {
-    pointer-events: none; /* make the invisible icon unclickable */
+      pointer-events: none; /* make the invisible icon unclickable */
     }
   </style>
 </head>
+
 <body>
   <div id="map" style="width: 1600px; height: 800px;"></div>
 
@@ -59,18 +62,19 @@
         m.bindPopup(m.villagePopup);
         m.closePopup();
       });
+
       expandedMarkers.length = 0;
-  
+
       if ( currentUnclusteredMarkers != null && currentCluster != null ) {
         currentUnclusteredMarkers.remove();
         currentUnclusteredMarkers = null;
-  
+
         map.addLayer(currentClusterGroup);
-        
+
         currentClusterGroup = null;
         currentCluster = null;
       }
-      
+
       boundsZoom = null;
     }
 
@@ -95,19 +99,19 @@
         iconSize: [40, 40]
       });
     };
-    
+
     // marker style that looks like cluster
     const clusterStyleIcon = L.divIcon({
       html: `<div style="
-               background:#009C9D; 
-               color:white; 
+               background:#009C9D;
+               color:white;
                border-radius:50%;
                border: 1px solid #004E4F;
-               width:40px; 
-               height:40px; 
-               display:flex; 
-               align-items:center; 
-               justify-content:center; 
+               width:40px;
+               height:40px;
+               display:flex;
+               align-items:center;
+               justify-content:center;
                font-family: 'Courier New', monospace;
                font-size:14px;">
                1
@@ -119,32 +123,32 @@
     // village markers
     const villageMarkerIcon = function(pitsNum) {
       return L.divIcon({
-      html: `<div style="
-               background:#009C9D; 
-               color:white; 
-               border-radius:50%;
-               border: 1px solid #004E4F;
-               width:40px; 
-               height:40px; 
-               display:flex; 
-               align-items:center; 
-               justify-content:center; 
-               font-family: 'Courier New', monospace;
-               font-size:14px;">
-               ${pitsNum}
-             </div>`,
-      className: "village-marker-icon",
-      iconSize: [40, 40]
+        html: `<div style="
+                 background:#009C9D;
+                 color:white;
+                 border-radius:50%;
+                 border: 1px solid #004E4F;
+                 width:40px;
+                 height:40px;
+                 display:flex;
+                 align-items:center;
+                 justify-content:center;
+                 font-family: 'Courier New', monospace;
+                 font-size:14px;">
+                 ${pitsNum}
+               </div>`,
+        className: "village-marker-icon",
+        iconSize: [40, 40]
       });
     };
-    
+
     // icon style after expanding
     const expandedMarkerIcon = L.divIcon({
       html: `<div style="
-               background:#80CECE; 
+               background:#80CECE;
                border-radius:50%;
                border: 1px solid #009C9D;
-               width:15px; 
+               width:15px;
                height:15px;">
              </div>`,
       className: "expanded-marker-icon",
@@ -156,7 +160,7 @@
       html: `<div style="
                width:1px;
                height:1px;
-               background-color: rgba(0,0,0,0);  /* fully transparent */
+               background-color: rgba(0,0,0,0);
              "></div>`,
       className: "invisible-cluster-icon",
       iconSize: [1, 1]
@@ -167,10 +171,10 @@
       zoom: 5,
       minZoom: 2,
       maxZoom: 18,
-      worldCopyJump: false,   // prevent snapping across worlds
+      worldCopyJump: false, // prevent snapping across worlds
       maxBounds: [
-        [-90, -180],  // southwest corner
-        [90, 180]     // northeast corner
+        [-90, -180], // southwest corner
+        [90, 180] // northeast corner
       ],
       fullscreenControl: true
     });
@@ -196,6 +200,7 @@
       onAdd: function(map) {
         const btn = L.DomUtil.create('button', '');
         let current = 'satellite';
+
         btn.innerHTML = "Street View";
         btn.style.backgroundColor = 'white';
         btn.style.padding = '5px';
@@ -215,9 +220,11 @@
             btn.innerHTML = "Street View";
           }
         };
+
         return btn;
       }
     });
+
     new ToggleControl({ position: 'topright' }).addTo(map);
 
     // bounds and cluster storage
@@ -237,193 +244,296 @@
     // create temporary village markers layer
     const villageLayer = L.layerGroup().addTo(map);
 
-    // fetch village data
-    fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/main/village_data.txt')
-      .then(res => res.text())
-      .then(text => {
-        const lines = text.trim().split('\n');
-        lines.shift(); // remove header row
+    // store village data and dataset version
+    let villageData = [];
+    let datasetVersion = '';
 
-        lines.forEach(line => {
-          const columns = line.split('\t');
-          // get data for each village
-          const villageName = (columns[0] || '').trim() ? toTitleCase(columns[0].trim()) : '';
-          const villagePitsNum = parseFloat(columns[1])
-          const villageLat = parseFloat(columns[2]);
-          const villageLon = parseFloat(columns[3]);
+    // cache pit files after they are fetched
+    const pitCache = new Map();
 
-          // track bounds
-          if ( !isNaN(villageLat) && !isNaN(villageLon) ) {
-            minLat = Math.min(minLat, villageLat);
-            maxLat = Math.max(maxLat, villageLat);
-            minLon = Math.min(minLon, villageLon);
-            maxLon = Math.max(maxLon, villageLon);
-          } else {
-            return
+    // layer for currently displayed pits
+    const pitLayer = L.layerGroup().addTo(map);
+
+    // prevents an older click from overwriting a newer click
+    let activeLoadId = 0;
+
+    // convert stored village bounds into leaflet bounds
+    function getVillageBounds(village) {
+      if ( !village.bounds ) {
+        return null;
+      }
+
+      const minLat = Number(village.bounds.minLat);
+      const maxLat = Number(village.bounds.maxLat);
+      const minLon = Number(village.bounds.minLon);
+      const maxLon = Number(village.bounds.maxLon);
+
+      if (
+        !Number.isFinite(minLat) ||
+        !Number.isFinite(maxLat) ||
+        !Number.isFinite(minLon) ||
+        !Number.isFinite(maxLon)
+      ) {
+        return null;
+      }
+
+      return L.latLngBounds(
+        [minLat, minLon],
+        [maxLat, maxLon]
+      );
+    }
+
+    // fetch one village's pit file and cache it
+    function loadVillagePits(village) {
+      if ( !village.pitFile ) {
+        return Promise.resolve([]);
+      }
+
+      if ( pitCache.has(village.pitFile) ) {
+        return pitCache.get(village.pitFile);
+      }
+
+      const url =
+        `https://raw.githubusercontent.com/savegroundwater/jaltara/main/data/pits_by_village/${village.pitFile}?v=${encodeURIComponent(datasetVersion)}`;
+
+      const request = fetch(url)
+        .then(res => {
+          if ( !res.ok ) {
+            throw new Error(
+              `failed to load pits for ${village.name}: ${res.status}`
+            );
           }
 
-        // popups
-        const villagePopup = `<strong>Village:</strong> ${villageName}<br>`;
+          return res.json();
+        })
+        .catch(error => {
+          pitCache.delete(village.pitFile);
+          throw error;
+        });
 
-        // village markers
-        const marker = L.marker([villageLat, villageLon], { icon: villageMarkerIcon(villagePitsNum) });
-        marker.bindPopup(villagePopup);
-        marker.on('mouseover', function() { this.openPopup(); });
-        marker.on('mouseout', function() { this.closePopup(); });
+      pitCache.set(village.pitFile, request);
 
-        marker.addTo(villageLayer);
+      return request;
+    }
+
+    // create the popup shown for an individual pit
+    function createPitPopup(pit, villageName) {
+      let popupContent = '<div style="text-align:center;">';
+
+      if ( pit.image && pit.image !== '--' ) {
+        popupContent += `
+          <div style="width:150px; height:150px; overflow:hidden; margin:0 auto;">
+            <img
+              src="${pit.image}"
+              style="width:150px; height:150px; object-fit:cover;"
+            >
+          </div><br>
+        `;
+      }
+
+      if ( villageName && villageName !== '--' ) {
+        popupContent += `<strong>Village:</strong> ${villageName}<br>`;
+      }
+
+      if ( pit.date && pit.date !== '--' ) {
+        popupContent += `<strong>Date:</strong> ${pit.date}`;
+      }
+
+      popupContent += '</div>';
+
+      return popupContent;
+    }
+
+    // load and display pits for a clicked village
+    async function openVillage(village) {
+      const clickedBounds = getVillageBounds(village);
+
+      if ( !clickedBounds ) {
+        console.error(`no valid bounds found for ${village.name}`);
+        return;
+      }
+
+      const loadId = ++activeLoadId;
+
+      // remove pits from the previously opened village
+      pitLayer.clearLayers();
+
+      // find villages whose pit bounds overlap the clicked village
+      const nearbyVillages = villageData.filter(candidate => {
+        if ( !candidate.pitFile ) {
+          return false;
+        }
+
+        const candidateBounds = getVillageBounds(candidate);
+
+        if ( !candidateBounds ) {
+          return false;
+        }
+
+        return clickedBounds.intersects(candidateBounds);
       });
 
-    // fetch pit data
-//     fetch('https://raw.githubusercontent.com/savegroundwater/jaltara/d25ca6ebcef06176a284c7eb0c49c106f56f47ba/pit_data.txt')
-//       .then(res => res.text())
-//       .then(text => {
-//         const lines = text.trim().split('\n');
-//         lines.shift(); // remove header row
+      try {
+        // only fetch pit files for villages that could contain relevant pits
+        const loadedVillages = await Promise.all(
+          nearbyVillages.map(async candidate => {
+            const pits = await loadVillagePits(candidate);
 
-//         lines.forEach(line => {
-//           const columns = line.split('\t');
-//           // make sure data is right
-//           const pitLat = parseFloat((columns[1] || '').trim()) || '';
-//           const pitLon = parseFloat((columns[2] || '').trim()) || '';
-//           const village = (columns[3] || '').trim() ? toTitleCase(columns[3].trim()) : '';
-//           const date = (columns[5] || '').trim();
-//           const image = (columns[6] || '').trim();
-          
-// don't need anymore                                                                     //           if ( !isNaN(pitLat) && !isNaN(pitLon) ) {
-                                                                                          //             // track bounds
-                                                                                          //             minLat = Math.min(minLat, pitLat);
-                                                                                          //             maxLat = Math.max(maxLat, pitLat);
-                                                                                          //             minLon = Math.min(minLon, pitLon);
-                                                                                          //             maxLon = Math.max(maxLon, pitLon);
-
-//             // popup content
-//             let popupContent = '<div style="text-align:center;">';
-//             if ( image && image !== '--' ) {
-//               popupContent += `
-//                 <div style="width:150px; height:150px; overflow:hidden; margin:0 auto;">
-//                   <img src="${image}" style="width:150px; height:150px; object-fit:cover;">
-//                 </div><br>
-//               `;
-//             }
-//             if ( village && village !== '--' ) {
-//               popupContent += `<strong>Village:</strong> ${village}<br>`;
-//             }
-//             if ( date && date !== '--' ) {
-//               popupContent += `<strong>Date:</strong> ${date}`;
-//             }
-//             popupContent += '</div>';
-
-//             const villagePopup = `<strong>Village:</strong> ${village}<br>`;
-
-//             // make the marker look like a cluster with only village in popup
-//             const marker = L.marker([pitLat, pitLon], { icon: clusterStyleIcon });
-//             marker.villageName = village;
-//             marker.villagePopup = villagePopup;
-//             marker.popupContent = popupContent;
-
-            // marker.bindPopup(marker.villagePopup);
-            
-            // marker.on('mouseover', function() { this.openPopup(); });
-            // marker.on('mouseout', function() { this.closePopup(); });
-            
-// // marker clicks
-//             marker.on('click', function() {
-//               if ( (currentCluster == null || marker.villageName != currentCluster.villageName) && expandedMarkers.length == 0 ) {
-//                 clearMap();
-                
-//                 this.setIcon(expandedMarkerIcon);
-//                 this.bindPopup(this.popupContent);
-  
-//                 const coords = this.getLatLng();
-  
-//                 map.flyTo([coords.lat, coords.lng], 16, { animate: true, duration: 0.5 });
-//                 boundsZoom = 16;
-                
-//                 if ( !expandedMarkers.includes(this) ) {
-//                   expandedMarkers.push(this);       // add it to expandedMarkers if not already there
-//                 }
-//               } else if ( expandedMarkers.length > 0 || marker.villageName == currentCluster.villageName ) {
-//                 clearMap();
-//               }
-//               });
-
-// // zoomend
-//             map.on('zoomend', function() {
-//               if ( boundsZoom != null && map.getZoom() < (boundsZoom - 1) ) {
-//                 clearMap();
-//               }
-//             });
-
-//             // make sure cluster exists for village
-//             if ( !clusters[village] && (currentCluster == null || currentCluster.villageName != village) ) {
-//               clusters[village] = L.markerClusterGroup({
-//                 maxClusterRadius: 999999,
-//                 disableClusteringAtZoom: 20, // never uncluster - this is controlled manually in clusterclick event
-//                 spiderfyOnMaxZoom: false,
-//                 zoomToBoundsOnClick: true,
-//                 showCoverageOnHover: false,
-// // cluster iconcreatefunction
-//                 iconCreateFunction: function(cluster) {
-//                   return defaultClusterIcon(cluster);
-//                 }
-//               });
-
-//               clusters[village].villageName = village;
-
-//               clusters[village].on('clustermouseover', function(e) {
-//                 e.layer.bindPopup(`<b>Village:</b> ${village}`).openPopup();
-//               });
-
-//               clusters[village].on('clustermouseout', function(e) {
-//                 e.layer.closePopup();
-//               });
-
-// // cluster clicks
-//               clusters[village].on('clusterclick', function(e) {
-//                 clearMap();
-                
-//                 currentCluster = e.layer;
-//                 currentCluster.villageName = village;
-//                 currentClusterGroup = clusters[village];
-                
-//                 const currentMarkers = currentCluster.getAllChildMarkers(); // get all markers in this cluster
-//                 currentMarkers.forEach(marker => {
-//                   marker.setIcon(expandedMarkerIcon);
-//                   marker.bindPopup(marker.popupContent);
-//                 });
-
-//               map.removeLayer(currentClusterGroup);
-                
-//               currentUnclusteredMarkers = L.layerGroup(currentMarkers);
-//               currentUnclusteredMarkers.addTo(map)
-
-//               map.flyToBounds(currentCluster.getBounds(), { padding: [50, 50], maxZoom: 18, animate: true, duration: 0.5 });
-//               boundsZoom = map.getBoundsZoom(currentCluster.getBounds());
-              
-//               });
-  
-//               map.addLayer(clusters[village]);
-              
-//             }
-
-//             // add marker to that village's cluster
-//             clusters[village].addLayer(marker);
-
-//           }
-//         });
-
-        // fit map to bounds
-        const bounds = L.latLngBounds(
-          L.latLng(minLat - 1, minLon - 1),
-          L.latLng(maxLat + 1, maxLon + 1)
+            return {
+              village: candidate,
+              pits: pits
+            };
+          })
         );
-        map.fitBounds(bounds);
+
+        // ignore this result if another village was clicked while loading
+        if ( loadId !== activeLoadId ) {
+          return;
+        }
+
+        loadedVillages.forEach(result => {
+          result.pits.forEach(pit => {
+            const pitLat = Number(pit.lat);
+            const pitLon = Number(pit.lon);
+
+            if (
+              !Number.isFinite(pitLat) ||
+              !Number.isFinite(pitLon)
+            ) {
+              return;
+            }
+
+            // always include the clicked village's pits
+            // only include neighboring village pits inside the clicked bounds
+            const shouldDisplay =
+              result.village.name === village.name ||
+              clickedBounds.contains([pitLat, pitLon]);
+
+            if ( !shouldDisplay ) {
+              return;
+            }
+
+            const marker = L.marker(
+              [pitLat, pitLon],
+              { icon: expandedMarkerIcon }
+            );
+
+            marker.bindPopup(
+              createPitPopup(pit, result.village.name)
+            );
+
+            marker.on('mouseover', function() {
+              this.openPopup();
+            });
+
+            marker.on('mouseout', function() {
+              this.closePopup();
+            });
+
+            marker.addTo(pitLayer);
+          });
+        });
+
+        // zoom to the clicked village's pit bounds
+        map.flyToBounds(
+          clickedBounds,
+          {
+            padding: [50, 50],
+            maxZoom: 18,
+            animate: true,
+            duration: 0.5
+          }
+        );
+
+      } catch (error) {
+        console.error(
+          `failed to open ${village.name}:`,
+          error
+        );
+      }
+    }
+
+    // fetch lightweight village index
+    fetch(
+      `https://raw.githubusercontent.com/savegroundwater/jaltara/main/data/village_index.json?t=${Date.now()}`,
+      { cache: 'no-store' }
+    )
+      .then(res => {
+        if ( !res.ok ) {
+          throw new Error(`failed to load village index: ${res.status}`);
+        }
+
+        return res.json();
+      })
+      .then(data => {
+        datasetVersion = data.version || '';
+        villageData = data.villages || [];
+
+        villageData.forEach(village => {
+          const villageLat = Number(village.lat);
+          const villageLon = Number(village.lon);
+
+          if ( !Number.isFinite(villageLat) || !Number.isFinite(villageLon) ) {
+            return;
+          }
+
+          // track overall map bounds
+          minLat = Math.min(minLat, villageLat);
+          maxLat = Math.max(maxLat, villageLat);
+          minLon = Math.min(minLon, villageLon);
+          maxLon = Math.max(maxLon, villageLon);
+
+          // use the actual number of valid pits
+          const villagePitsNum =
+            village.actualPitCount ?? village.pitCount ?? 0;
+
+          // create village popup
+          const villagePopup =
+            `<strong>Village:</strong> ${village.name}<br>`;
+
+          // create village marker
+          const marker = L.marker(
+            [villageLat, villageLon],
+            { icon: villageMarkerIcon(villagePitsNum) }
+          );
+
+          marker.villageData = village;
+          marker.bindPopup(villagePopup);
+
+          marker.on('mouseover', function() {
+            this.openPopup();
+          });
+
+          marker.on('mouseout', function() {
+            this.closePopup();
+          });
+
+          marker.on('click', function() {
+            openVillage(village);
+          });
+
+          marker.addTo(villageLayer);
+        });
+
+        // fit map around all villages
+        if (
+          Number.isFinite(minLat) &&
+          Number.isFinite(maxLat) &&
+          Number.isFinite(minLon) &&
+          Number.isFinite(maxLon)
+        ) {
+          const bounds = L.latLngBounds(
+            L.latLng(minLat - 1, minLon - 1),
+            L.latLng(maxLat + 1, maxLon + 1)
+          );
+
+          map.fitBounds(bounds);
+        }
+      })
+      .catch(error => {
+        console.error('failed to load village data:', error);
       });
+
   </script>
 </body>
 </html>
-
-
-
-
