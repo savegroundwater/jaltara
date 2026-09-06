@@ -1,1 +1,1979 @@
-{"version":"8b540a3fd2a82ffa","villages":[{"name":"Karnataka-Vijayanagar-Kudligi-null-Poojarahalli","pitCount":32,"actualPitCount":32,"lat":14.61658349,"lon":76.54514897,"bounds":{"minLat":14.6083128,"maxLat":14.658816,"minLon":76.5330595,"maxLon":76.5831386},"pitFile":"karnataka-vijayanagar-kudligi-null-poojarahalli-135374ac.json"},{"name":"Karnataka-Vijayanagar-Kotturu-null-Kandagal","pitCount":13,"actualPitCount":13,"lat":14.88346411,"lon":76.28691526,"bounds":{"minLat":14.8739267,"maxLat":14.8916466666666,"minLon":76.2820816666666,"maxLon":76.291115},"pitFile":"karnataka-vijayanagar-kotturu-null-kandagal-4fcaa511.json"},{"name":"Karnataka-Vijayanagar-Harapanahalli-null-Kadathi","pitCount":1,"actualPitCount":1,"lat":14.9733367,"lon":76.319545,"bounds":{"minLat":14.9733367,"maxLat":14.9733367,"minLon":76.319545,"maxLon":76.319545},"pitFile":"karnataka-vijayanagar-harapanahalli-null-kadathi-0a278d1a.json"},{"name":"Karnataka-Vijayanagar-Hagaribommanahalli-null-Dasmapura","pitCount":7,"actualPitCount":7,"lat":14.97361024,"lon":76.31958324,"bounds":{"minLat":14.9729494,"maxLat":14.9746786,"minLon":76.3192892,"maxLon":76.3199649},"pitFile":"karnataka-vijayanagar-hagaribommanahalli-null-dasmapura-338ecc76.json"},{"name":"Karnataka-Ballari-Ballari-null-Sindhavalam","pitCount":1,"actualPitCount":1,"lat":15.3256107,"lon":77.0751905,"bounds":{"minLat":15.3256107,"maxLat":15.3256107,"minLon":77.0751905,"maxLon":77.0751905},"pitFile":"karnataka-ballari-ballari-null-sindhavalam-4b99c80f.json"},{"name":"Maharashtra-Jalna-Partur-null-Warphal","pitCount":1,"actualPitCount":1,"lat":19.3548437,"lon":76.582793,"bounds":{"minLat":19.3548437,"maxLat":19.3548437,"minLon":76.582793,"maxLon":76.582793},"pitFile":"maharashtra-jalna-partur-null-warphal-69bb77c1.json"},{"name":"Maharashtra-Jalna-Partur-null-Bramhanwadi","pitCount":211,"actualPitCount":211,"lat":19.38012249,"lon":76.26673032,"bounds":{"minLat":19.3557125,"maxLat":19.41903991,"minLon":76.17448492,"maxLon":76.280345},"pitFile":"maharashtra-jalna-partur-null-bramhanwadi-9af65779.json"},{"name":"Maharashtra-Jalna-Partur-null-Ashti","pitCount":152,"actualPitCount":152,"lat":19.3802161,"lon":76.22132793,"bounds":{"minLat":19.3458665,"maxLat":19.3994483333333,"minLon":76.2016811,"maxLon":76.2464175},"pitFile":"maharashtra-jalna-partur-null-ashti-6548f206.json"},{"name":"Maharashtra-Jalna-Partur-null-Akoli","pitCount":384,"actualPitCount":385,"lat":19.39317791,"lon":76.25786365,"bounds":{"minLat":19.3524224,"maxLat":19.4237777,"minLon":76.1937695,"maxLon":76.331538},"pitFile":"maharashtra-jalna-partur-null-akoli-b3fcd3de.json"},{"name":"Maharashtra-Jalna-Jalna-null-Sawargaon Bhagde","pitCount":4,"actualPitCount":4,"lat":19.39522558,"lon":76.2412318,"bounds":{"minLat":19.395208,"maxLat":19.3952484,"minLon":76.241192,"maxLon":76.2412979},"pitFile":"maharashtra-jalna-jalna-null-sawargaon-bhagde-49942d7e.json"},{"name":"Maharashtra-Jalna-Partur-null-Asangaon","pitCount":124,"actualPitCount":124,"lat":19.40067399,"lon":76.14938438,"bounds":{"minLat":19.3903486,"maxLat":19.4051223993301,"minLon":76.1413716666666,"maxLon":76.1548835},"pitFile":"maharashtra-jalna-partur-null-asangaon-d0afec2a.json"},{"name":"Maharashtra-Jalna-Partur-null-Pandepokhari","pitCount":259,"actualPitCount":264,"lat":19.41595085,"lon":76.17162139,"bounds":{"minLat":19.3825463,"maxLat":19.4620152,"minLon":76.0712807,"maxLon":76.1984784},"pitFile":"maharashtra-jalna-partur-null-pandepokhari-8cf1bcbc.json"},{"name":"Maharashtra-Jalna-Partur-null-Likhit Pimpri","pitCount":83,"actualPitCount":83,"lat":19.42719563,"lon":76.27483777,"bounds":{"minLat":19.4185417,"maxLat":19.4344233,"minLon":76.26973696,"maxLon":76.2787143},"pitFile":"maharashtra-jalna-partur-null-likhit-pimpri-2181a1c1.json"},{"name":"Maharashtra-Jalna-Ghansawangi-null-Dahegaon Devi","pitCount":160,"actualPitCount":160,"lat":19.45656383,"lon":76.07231725,"bounds":{"minLat":19.4436967,"maxLat":19.4782993,"minLon":76.0531518,"maxLon":76.0929062},"pitFile":"maharashtra-jalna-ghansawangi-null-dahegaon-devi-1c0fccce.json"},{"name":"Maharashtra-Jalna-Partur-null-Shrishti Tanda","pitCount":6,"actualPitCount":6,"lat":19.46308952,"lon":76.23351127,"bounds":{"minLat":19.4621449,"maxLat":19.4640732,"minLon":76.233056,"maxLon":76.2342614},"pitFile":"maharashtra-jalna-partur-null-shrishti-tanda-17c295c7.json"},{"name":"Maharashtra-Jalna-Partur-null-Shrishti","pitCount":277,"actualPitCount":277,"lat":19.46523222,"lon":76.23281394,"bounds":{"minLat":19.4505033,"maxLat":19.4879485,"minLon":76.21414,"maxLon":76.2488171},"pitFile":"maharashtra-jalna-partur-null-shrishti-5087c755.json"},{"name":"Shrishti","pitCount":60,"actualPitCount":60,"lat":19.47653606,"lon":76.22975157,"bounds":{"minLat":19.47,"maxLat":19.492053725997955,"minLon":76.21,"maxLon":76.24},"pitFile":"shrishti-9c907497.json"},{"name":"Maharashtra-Jalna-Partur-null-Satona Kh.","pitCount":418,"actualPitCount":419,"lat":19.48222954,"lon":76.35165218,"bounds":{"minLat":19.468785,"maxLat":19.5028833,"minLon":76.3418117,"maxLon":76.3700067},"pitFile":"maharashtra-jalna-partur-null-satona-kh-33324f84.json"},{"name":"Maharashtra-Jalna-Partur-null-Satona Bk.","pitCount":85,"actualPitCount":85,"lat":19.50137394,"lon":76.32299748,"bounds":{"minLat":19.1787306,"maxLat":19.7765316,"minLon":76.29917,"maxLon":77.0264961},"pitFile":"maharashtra-jalna-partur-null-satona-bk-44c9a858.json"},{"name":"Pimprula","pitCount":329,"actualPitCount":329,"lat":19.50455703,"lon":76.25788165,"bounds":{"minLat":19.485917090938834,"maxLat":19.510477322514912,"minLon":76.24677714399843,"maxLon":76.26225458958443},"pitFile":"pimprula-4f920922.json"},{"name":"Maharashtra-Jalna-Partur-null-Pimprula Bk.","pitCount":171,"actualPitCount":171,"lat":19.50678607,"lon":76.25911859,"bounds":{"minLat":19.4806283333333,"maxLat":19.8882498,"minLon":76.24794,"maxLon":76.4492427},"pitFile":"maharashtra-jalna-partur-null-pimprula-bk-7661d928.json"},{"name":"Khandviwadi","pitCount":968,"actualPitCount":968,"lat":19.51563564,"lon":76.23755718,"bounds":{"minLat":19.490829962598742,"maxLat":19.53180859818848,"minLon":76.2,"maxLon":76.26},"pitFile":"khandviwadi-a2bbcd9e.json"},{"name":"Maharashtra-Jalna-Partur-null-Hatdi","pitCount":27,"actualPitCount":27,"lat":19.52134184,"lon":76.16385698,"bounds":{"minLat":19.516655,"maxLat":19.5357833333333,"minLon":76.1051456,"maxLon":76.1836517},"pitFile":"maharashtra-jalna-partur-null-hatdi-26666ea2.json"},{"name":"Maharashtra-Jalna-Partur-null-Sirasgaon","pitCount":2,"actualPitCount":2,"lat":19.52155755,"lon":76.2311258,"bounds":{"minLat":19.5214983,"maxLat":19.5216168,"minLon":76.23111,"maxLon":76.2311416},"pitFile":"maharashtra-jalna-partur-null-sirasgaon-50446085.json"},{"name":"Maharashtra-Jalna-Partur-null-Khandviwadi","pitCount":252,"actualPitCount":252,"lat":19.52486725,"lon":76.24837315,"bounds":{"minLat":19.49841,"maxLat":19.857925,"minLon":76.2072504,"maxLon":76.386395},"pitFile":"maharashtra-jalna-partur-null-khandviwadi-352a7701.json"},{"name":"Khandvi","pitCount":769,"actualPitCount":769,"lat":19.5317573,"lon":76.26464573,"bounds":{"minLat":19.49469690255366,"maxLat":19.686153163368026,"minLon":76.24481002899428,"maxLon":76.28},"pitFile":"khandvi-38a57173.json"},{"name":"Maharashtra-Jalna-Partur-null-Hastur Tanda","pitCount":1,"actualPitCount":1,"lat":19.53179,"lon":76.1736217,"bounds":{"minLat":19.53179,"maxLat":19.53179,"minLon":76.1736217,"maxLon":76.1736217},"pitFile":"maharashtra-jalna-partur-null-hastur-tanda-9da0b7ba.json"},{"name":"Maharashtra-Jalna-Partur-null-Soijana","pitCount":4,"actualPitCount":4,"lat":19.53345715,"lon":76.17033888,"bounds":{"minLat":19.5334468,"maxLat":19.5334674,"minLon":76.1703109,"maxLon":76.1703633},"pitFile":"maharashtra-jalna-partur-null-soijana-50457902.json"},{"name":"Maharashtra-Jalna-Partur-null-Warphalwadi","pitCount":9,"actualPitCount":9,"lat":19.55700478,"lon":76.26848668,"bounds":{"minLat":19.5163087,"maxLat":19.570125,"minLon":76.2346228,"maxLon":76.3252166},"pitFile":"maharashtra-jalna-partur-null-warphalwadi-48bb4971.json"},{"name":"Maharashtra-Jalna-Partur-null-Eakrukha","pitCount":300,"actualPitCount":300,"lat":19.59504082,"lon":76.2556555,"bounds":{"minLat":19.5891503,"maxLat":19.6083381,"minLon":76.2508199,"maxLon":76.2596998},"pitFile":"maharashtra-jalna-partur-null-eakrukha-f81ea7f5.json"},{"name":"Maharashtra-Jalna-Partur-null-Nagapur","pitCount":199,"actualPitCount":200,"lat":19.59514241,"lon":76.26175033,"bounds":{"minLat":19.5891348,"maxLat":19.8120417,"minLon":76.2595731,"maxLon":76.4042183},"pitFile":"maharashtra-jalna-partur-null-nagapur-a985f692.json"},{"name":"Maharashtra-Jalna-Partur-null-Masla","pitCount":64,"actualPitCount":72,"lat":19.61705505,"lon":76.18568204,"bounds":{"minLat":19.590901,"maxLat":19.6235978833333,"minLon":76.1705848,"maxLon":76.214415},"pitFile":"maharashtra-jalna-partur-null-masla-079cb78b.json"},{"name":"Maharashtra-Jalna-Partur-null-Amba","pitCount":69,"actualPitCount":71,"lat":19.61903864,"lon":76.20967405,"bounds":{"minLat":19.605348,"maxLat":19.6486299,"minLon":76.1882409,"maxLon":76.2221145},"pitFile":"maharashtra-jalna-partur-null-amba-63f159ac.json"},{"name":"Maharashtra-Jalna-Mantha-null-Ranmala","pitCount":9,"actualPitCount":9,"lat":19.61907495,"lon":76.40912808,"bounds":{"minLat":19.61673,"maxLat":19.6229807,"minLon":76.4005567,"maxLon":76.4377133},"pitFile":"maharashtra-jalna-mantha-null-ranmala-6fd4ecaf.json"},{"name":"Maharashtra-Jalna-Mantha-null-Helas","pitCount":246,"actualPitCount":247,"lat":19.63068225,"lon":76.41782539,"bounds":{"minLat":19.5980801,"maxLat":19.7005283,"minLon":76.3852277,"maxLon":76.44129416},"pitFile":"maharashtra-jalna-mantha-null-helas-55704738.json"},{"name":"Maharashtra-Jalna-Mantha-null-Karnawal","pitCount":598,"actualPitCount":599,"lat":19.63147916,"lon":76.44456293,"bounds":{"minLat":19.6189918,"maxLat":19.64558,"minLon":76.3903158,"maxLon":76.4615505},"pitFile":"maharashtra-jalna-mantha-null-karnawal-6dba5b61.json"},{"name":"Maharashtra-Jalna-Partur-null-Kawjawala","pitCount":26,"actualPitCount":27,"lat":19.6424144,"lon":76.15844336,"bounds":{"minLat":19.6134468,"maxLat":19.6571971,"minLon":76.1231361,"maxLon":76.1905374},"pitFile":"maharashtra-jalna-partur-null-kawjawala-ee0b30c7.json"},{"name":"Maharashtra-Jalna-Partur-null-Kandari","pitCount":1,"actualPitCount":1,"lat":19.6509017,"lon":76.2553483,"bounds":{"minLat":19.6509017,"maxLat":19.6509017,"minLon":76.2553483,"maxLon":76.2553483},"pitFile":"maharashtra-jalna-partur-null-kandari-44d4b31d.json"},{"name":"Maharashtra-Jalna-Partur-null-Khadki","pitCount":395,"actualPitCount":397,"lat":19.65203917,"lon":76.2461254,"bounds":{"minLat":19.6385938,"maxLat":19.6850572,"minLon":76.2300317,"maxLon":76.2661959},"pitFile":"maharashtra-jalna-partur-null-khadki-b9ac3fd5.json"},{"name":"Maharashtra-Jalna-Partur-null-Babultara","pitCount":869,"actualPitCount":871,"lat":19.66804603,"lon":76.20043398,"bounds":{"minLat":19.6383452,"maxLat":19.7043158,"minLon":76.141236,"maxLon":76.2134538},"pitFile":"maharashtra-jalna-partur-null-babultara-735f7c66.json"},{"name":"Maharashtra-Jalna-Mantha-null-Malkini","pitCount":409,"actualPitCount":409,"lat":19.6748001,"lon":76.46037551,"bounds":{"minLat":19.62048,"maxLat":19.7189821,"minLon":76.4315433,"maxLon":76.5228666},"pitFile":"maharashtra-jalna-mantha-null-malkini-cddce6d3.json"},{"name":"Umbarkheda","pitCount":138,"actualPitCount":138,"lat":19.6822674,"lon":76.39275071,"bounds":{"minLat":19.65,"maxLat":19.71,"minLon":76.38,"maxLon":76.41},"pitFile":"umbarkheda-075d61dc.json"},{"name":"Watur","pitCount":300,"actualPitCount":300,"lat":19.68304599,"lon":76.27235561,"bounds":{"minLat":19.585118333333334,"maxLat":20.199259964176754,"minLon":76.21,"maxLon":77.29124025227215},"pitFile":"watur-f414dc4e.json"},{"name":"Maharashtra-Jalna-Partur-null-Yenora","pitCount":1,"actualPitCount":1,"lat":19.685422,"lon":76.2690921,"bounds":{"minLat":19.685422,"maxLat":19.685422,"minLon":76.2690921,"maxLon":76.2690921},"pitFile":"maharashtra-jalna-partur-null-yenora-e8cabc80.json"},{"name":"Maharashtra-Jalna-Partur-null-Watur","pitCount":27,"actualPitCount":27,"lat":19.68732243,"lon":76.26933193,"bounds":{"minLat":19.6832145,"maxLat":19.6895853,"minLon":76.2654258,"maxLon":76.2737154},"pitFile":"maharashtra-jalna-partur-null-watur-0b954a99.json"},{"name":"Maharashtra-Jalna-Mantha-null-Akani","pitCount":14,"actualPitCount":14,"lat":19.69208276,"lon":76.33291814,"bounds":{"minLat":19.664912,"maxLat":19.7029478,"minLon":76.30427,"maxLon":76.3464598},"pitFile":"maharashtra-jalna-mantha-null-akani-9acd0b95.json"},{"name":"Maharashtra-Jalna-Mantha-null-Meskheda","pitCount":169,"actualPitCount":169,"lat":19.69259591,"lon":76.37121827,"bounds":{"minLat":19.6804321,"maxLat":19.69889,"minLon":76.3600881,"maxLon":76.376277},"pitFile":"maharashtra-jalna-mantha-null-meskheda-ffae8d4c.json"},{"name":"Murum Kheda","pitCount":185,"actualPitCount":185,"lat":19.6957298,"lon":76.39848803,"bounds":{"minLat":19.65,"maxLat":19.71,"minLon":76.37,"maxLon":76.47},"pitFile":"murum-kheda-49885c67.json"},{"name":"Maharashtra-Jalna-Mantha-null-Ambhoda Kadam","pitCount":5,"actualPitCount":5,"lat":19.69789198,"lon":76.46208078,"bounds":{"minLat":19.6977989,"maxLat":19.6980133,"minLon":76.461763,"maxLon":76.4624296},"pitFile":"maharashtra-jalna-mantha-null-ambhoda-kadam-c7b904c5.json"},{"name":"Maharashtra-Jalna-Mantha-null-Limbona","pitCount":20,"actualPitCount":20,"lat":19.69982044,"lon":76.34793312,"bounds":{"minLat":19.6985982,"maxLat":19.7009824,"minLon":76.3443186,"maxLon":76.3531905},"pitFile":"maharashtra-jalna-mantha-null-limbona-9550b9de.json"},{"name":"Maharashtra-Jalna-Mantha-null-Wirgavhan","pitCount":489,"actualPitCount":489,"lat":19.70141805,"lon":76.453602,"bounds":{"minLat":19.6826313,"maxLat":19.7114783,"minLon":76.4362433,"maxLon":76.4661823},"pitFile":"maharashtra-jalna-mantha-null-wirgavhan-5ff8219a.json"},{"name":"Dudha","pitCount":3,"actualPitCount":3,"lat":19.70156667,"lon":76.47363333,"bounds":{"minLat":19.7,"maxLat":19.7,"minLon":76.47,"maxLon":76.47},"pitFile":"dudha-48bff429.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pakni","pitCount":19,"actualPitCount":19,"lat":19.70465496,"lon":76.31160902,"bounds":{"minLat":19.6987726,"maxLat":19.71079,"minLon":76.3038254,"maxLon":76.3207116},"pitFile":"maharashtra-jalna-mantha-null-pakni-e8a58156.json"},{"name":"Amboda Kadam","pitCount":131,"actualPitCount":131,"lat":19.70478321,"lon":76.46831069,"bounds":{"minLat":19.69,"maxLat":19.72,"minLon":76.45,"maxLon":76.48},"pitFile":"amboda-kadam-6ea550b9.json"},{"name":"Maharashtra-Jalna-Mantha-null-Ramtirth","pitCount":169,"actualPitCount":170,"lat":19.70600977,"lon":76.41717465,"bounds":{"minLat":19.694269,"maxLat":19.7144044,"minLon":76.4060503,"maxLon":76.4398583},"pitFile":"maharashtra-jalna-mantha-null-ramtirth-db58135b.json"},{"name":"Arda Tolaji","pitCount":1,"actualPitCount":1,"lat":19.7079,"lon":76.4651,"bounds":{"minLat":19.71,"maxLat":19.71,"minLon":76.47,"maxLon":76.47},"pitFile":"arda-tolaji-390d079d.json"},{"name":"Taltondi","pitCount":89,"actualPitCount":89,"lat":19.70935281,"lon":76.3913191,"bounds":{"minLat":19.7,"maxLat":19.72,"minLon":76.38,"maxLon":76.4},"pitFile":"taltondi-0dd191f5.json"},{"name":"Maharashtra-Jalna-Mantha-null-Kanphodi","pitCount":3,"actualPitCount":3,"lat":19.70964667,"lon":76.29051617,"bounds":{"minLat":19.7006564,"maxLat":19.7171705,"minLon":76.2875977,"maxLon":76.2944323},"pitFile":"maharashtra-jalna-mantha-null-kanphodi-aaabd7bd.json"},{"name":"Maharashtra-Jalna-Mantha-null-Sawargaon Wayal","pitCount":201,"actualPitCount":201,"lat":19.71419582,"lon":76.34079541,"bounds":{"minLat":19.7027512,"maxLat":19.7338319,"minLon":76.3281812,"maxLon":76.3634101},"pitFile":"maharashtra-jalna-mantha-null-sawargaon-wayal-019e0a43.json"},{"name":"Wayal Pangri","pitCount":132,"actualPitCount":132,"lat":19.71601288,"lon":76.45119394,"bounds":{"minLat":19.69,"maxLat":19.73,"minLon":76.41,"maxLon":76.49},"pitFile":"wayal-pangri-d53cc8ce.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pangri Bk.","pitCount":184,"actualPitCount":184,"lat":19.71763128,"lon":76.44698729,"bounds":{"minLat":19.6940583,"maxLat":19.7249683,"minLon":76.26696,"maxLon":76.4555183},"pitFile":"maharashtra-jalna-mantha-null-pangri-bk-04ad6c08.json"},{"name":"Maharashtra-Jalna-Mantha-null-Wai","pitCount":44,"actualPitCount":45,"lat":19.71987183,"lon":76.22650035,"bounds":{"minLat":19.711592,"maxLat":19.7323683,"minLon":76.2148409,"maxLon":76.2386612},"pitFile":"maharashtra-jalna-mantha-null-wai-5011be28.json"},{"name":"Maltondi","pitCount":179,"actualPitCount":179,"lat":19.72981285,"lon":76.40175923,"bounds":{"minLat":19.64,"maxLat":19.74,"minLon":76.39,"maxLon":76.47},"pitFile":"maltondi-828ecbac.json"},{"name":"Maharashtra-Jalna-Mantha-null-Maltondi","pitCount":557,"actualPitCount":571,"lat":19.73012577,"lon":76.39992539,"bounds":{"minLat":19.660715,"maxLat":19.7516078,"minLon":76.3857147,"maxLon":76.4734794},"pitFile":"maharashtra-jalna-mantha-null-maltondi-ac42d8b2.json"},{"name":"Maharashtra-Jalna-Mantha-null-Lawni","pitCount":18,"actualPitCount":18,"lat":19.73392438,"lon":76.30693553,"bounds":{"minLat":19.7185596,"maxLat":19.8388495,"minLon":76.3012101,"maxLon":76.3452108},"pitFile":"maharashtra-jalna-mantha-null-lawni-6f0e29fb.json"},{"name":"Pandurna","pitCount":41,"actualPitCount":41,"lat":19.7383711,"lon":76.38518666,"bounds":{"minLat":19.73,"maxLat":19.77,"minLon":76.34,"maxLon":76.4},"pitFile":"pandurna-0c0b1390.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pangri (Gosavi)","pitCount":1,"actualPitCount":1,"lat":19.741826,"lon":76.3012947,"bounds":{"minLat":19.741826,"maxLat":19.741826,"minLon":76.3012947,"maxLon":76.3012947},"pitFile":"maharashtra-jalna-mantha-null-pangri-gosavi-c187f794.json"},{"name":"Dhoksala","pitCount":5,"actualPitCount":5,"lat":19.74338349,"lon":76.37863214,"bounds":{"minLat":19.74,"maxLat":19.74,"minLon":76.38,"maxLon":76.38},"pitFile":"dhoksala-9ac9ae88.json"},{"name":"Dhara","pitCount":4,"actualPitCount":4,"lat":19.744575,"lon":76.288275,"bounds":{"minLat":19.61,"maxLat":19.84,"minLon":76.21,"maxLon":76.48},"pitFile":"dhara-d7b7a227.json"},{"name":"Maharashtra-Jalna-Mantha-null-Dhoksal","pitCount":107,"actualPitCount":107,"lat":19.74811114,"lon":76.36996163,"bounds":{"minLat":19.7370235,"maxLat":19.7573883,"minLon":76.3586267,"maxLon":76.3755259},"pitFile":"maharashtra-jalna-mantha-null-dhoksal-2a98b337.json"},{"name":"Wadegaon","pitCount":77,"actualPitCount":77,"lat":19.75261277,"lon":76.3867855,"bounds":{"minLat":19.74,"maxLat":19.76,"minLon":76.38,"maxLon":76.39},"pitFile":"wadegaon-f416fad9.json"},{"name":"Dhoksal","pitCount":87,"actualPitCount":87,"lat":19.7555248,"lon":76.36920135,"bounds":{"minLat":19.74,"maxLat":19.77,"minLon":76.35,"maxLon":76.39},"pitFile":"dhoksal-850f0bf9.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pangra Gadadhe","pitCount":69,"actualPitCount":69,"lat":19.75909877,"lon":76.44549879,"bounds":{"minLat":19.7382246,"maxLat":19.7758354,"minLon":76.4257036,"maxLon":76.4578164},"pitFile":"maharashtra-jalna-mantha-null-pangra-gadadhe-7b114264.json"},{"name":"Waghoda","pitCount":26,"actualPitCount":26,"lat":19.75998111,"lon":76.34867554,"bounds":{"minLat":19.72,"maxLat":19.77,"minLon":76.33,"maxLon":76.46},"pitFile":"waghoda-7c230dc0.json"},{"name":"Maharashtra-Jalna-Mantha-null-Kinkheda","pitCount":162,"actualPitCount":162,"lat":19.77005485,"lon":76.44767249,"bounds":{"minLat":19.7648283,"maxLat":19.77396,"minLon":76.4362431,"maxLon":76.4609933},"pitFile":"maharashtra-jalna-mantha-null-kinkheda-569b6843.json"},{"name":"Maharashtra-Jalna-Jalna-null-Shambhu Sawargaon","pitCount":410,"actualPitCount":410,"lat":19.77033596,"lon":76.26541291,"bounds":{"minLat":19.7616505,"maxLat":19.7793567,"minLon":76.2497,"maxLon":76.2750877},"pitFile":"maharashtra-jalna-jalna-null-shambhu-sawargaon-ddc14680.json"},{"name":"Maharashtra-Jalna-Mantha-null-Khorad Sawangi","pitCount":625,"actualPitCount":631,"lat":19.77574409,"lon":76.41117365,"bounds":{"minLat":19.762145,"maxLat":19.79516,"minLon":76.4033667,"maxLon":76.4535683},"pitFile":"maharashtra-jalna-mantha-null-khorad-sawangi-35202d0e.json"},{"name":"Maharashtra-Jalna-Mantha-null-Malsawangi","pitCount":25,"actualPitCount":27,"lat":19.77797716,"lon":76.40455851,"bounds":{"minLat":19.7774583,"maxLat":19.7783599,"minLon":76.4039666,"maxLon":76.4050015},"pitFile":"maharashtra-jalna-mantha-null-malsawangi-7bb93e53.json"},{"name":"Ganeshpur","pitCount":303,"actualPitCount":303,"lat":19.77898383,"lon":76.3422772,"bounds":{"minLat":19.77,"maxLat":19.8,"minLon":76.33,"maxLon":76.35},"pitFile":"ganeshpur-8c27da2e.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pandhurna","pitCount":1,"actualPitCount":1,"lat":19.7798633,"lon":76.4094733,"bounds":{"minLat":19.7798633,"maxLat":19.7798633,"minLon":76.4094733,"maxLon":76.4094733},"pitFile":"maharashtra-jalna-mantha-null-pandhurna-48e21ded.json"},{"name":"Kirtapur","pitCount":486,"actualPitCount":486,"lat":19.78000531,"lon":76.48165583,"bounds":{"minLat":19.76517336165728,"maxLat":19.82,"minLon":76.45,"maxLon":76.50152523347523},"pitFile":"kirtapur-17a863e7.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pewa","pitCount":1,"actualPitCount":1,"lat":19.7802477,"lon":76.4612389,"bounds":{"minLat":19.7802477,"maxLat":19.7802477,"minLon":76.4612389,"maxLon":76.4612389},"pitFile":"maharashtra-jalna-mantha-null-pewa-842e43b1.json"},{"name":"Varud","pitCount":155,"actualPitCount":155,"lat":19.78076516,"lon":76.32626452,"bounds":{"minLat":19.77,"maxLat":19.79,"minLon":76.31,"maxLon":76.34},"pitFile":"varud-6b289071.json"},{"name":"Maharashtra-Jalna-Mantha-null-Vaidhywadgaon","pitCount":216,"actualPitCount":216,"lat":19.78441287,"lon":76.32083342,"bounds":{"minLat":19.772372,"maxLat":19.7905638,"minLon":76.3036123,"maxLon":76.3314349},"pitFile":"maharashtra-jalna-mantha-null-vaidhywadgaon-3fc3f647.json"},{"name":"Vaidya Wadgaon","pitCount":37,"actualPitCount":37,"lat":19.78571081,"lon":76.31601351,"bounds":{"minLat":19.7,"maxLat":19.79,"minLon":76.31,"maxLon":76.47},"pitFile":"vaidya-wadgaon-e817d3d1.json"},{"name":"Maharashtra-Jalna-Jalna-null-Borgaon","pitCount":318,"actualPitCount":318,"lat":19.78611173,"lon":76.2951019,"bounds":{"minLat":19.7649491,"maxLat":19.8101499,"minLon":76.26403,"maxLon":76.3066384},"pitFile":"maharashtra-jalna-jalna-null-borgaon-31feee9d.json"},{"name":"Maharashtra-Jalna-Mantha-null-Warud","pitCount":16,"actualPitCount":16,"lat":19.78792409,"lon":76.32624064,"bounds":{"minLat":19.78771,"maxLat":19.7881465,"minLon":76.3260387,"maxLon":76.3277855},"pitFile":"maharashtra-jalna-mantha-null-warud-974cbc59.json"},{"name":"Devgaon","pitCount":41,"actualPitCount":41,"lat":19.78928293,"lon":76.3642439,"bounds":{"minLat":19.77,"maxLat":19.8,"minLon":76.35,"maxLon":76.39},"pitFile":"devgaon-1c1c246e.json"},{"name":"Maharashtra-Jalna-Jalna-null-Dhagi","pitCount":278,"actualPitCount":278,"lat":19.78971082,"lon":76.26599747,"bounds":{"minLat":19.7783219,"maxLat":19.8008288,"minLon":76.2523718,"maxLon":76.2775349},"pitFile":"maharashtra-jalna-jalna-null-dhagi-68f436d1.json"},{"name":"Ambhora Jahagir","pitCount":103,"actualPitCount":103,"lat":19.79105056,"lon":76.33335287,"bounds":{"minLat":19.68,"maxLat":19.81,"minLon":76.27,"maxLon":76.35},"pitFile":"ambhora-jahagir-daa882f5.json"},{"name":"Maharashtra-Jalna-Jalna-null-Khambewadi","pitCount":231,"actualPitCount":232,"lat":19.797321,"lon":76.24291496,"bounds":{"minLat":16.5214233,"maxLat":19.8192333,"minLon":76.1962167,"maxLon":76.2539231},"pitFile":"maharashtra-jalna-jalna-null-khambewadi-e6c9b2ba.json"},{"name":"Maharashtra-Jalna-Jalna-null-Daregaon (Ner)","pitCount":11,"actualPitCount":11,"lat":19.80361609,"lon":76.29894811,"bounds":{"minLat":19.80321758,"maxLat":19.8042126,"minLon":76.29836334,"maxLon":76.29938279},"pitFile":"maharashtra-jalna-jalna-null-daregaon-ner-c3285be1.json"},{"name":"Maharashtra-Jalna-Mantha-null-Talegaon","pitCount":767,"actualPitCount":768,"lat":19.80697814,"lon":76.4011034,"bounds":{"minLat":19.7986833,"maxLat":19.819515,"minLon":76.3926119,"maxLon":76.4105467},"pitFile":"maharashtra-jalna-mantha-null-talegaon-db6eff73.json"},{"name":"Mahora","pitCount":83,"actualPitCount":83,"lat":19.80915898,"lon":76.3438254,"bounds":{"minLat":19.79,"maxLat":19.84,"minLon":76.32,"maxLon":76.38},"pitFile":"mahora-d25b40f1.json"},{"name":"Maharashtra-Jalna-Mantha-null-Kehalwadgaon","pitCount":22,"actualPitCount":22,"lat":19.80935036,"lon":76.36953839,"bounds":{"minLat":19.8007057,"maxLat":19.8268478,"minLon":76.3261503,"maxLon":76.382438},"pitFile":"maharashtra-jalna-mantha-null-kehalwadgaon-b9f85b97.json"},{"name":"Maharashtra-Jalna-Jalna-null-Kolwadi","pitCount":271,"actualPitCount":271,"lat":19.8111934,"lon":76.29327356,"bounds":{"minLat":19.7870899,"maxLat":19.862565,"minLon":76.2227752,"maxLon":76.3120722},"pitFile":"maharashtra-jalna-jalna-null-kolwadi-75c34b82.json"},{"name":"Kehal Wadgaon","pitCount":67,"actualPitCount":67,"lat":19.8120744,"lon":76.37668845,"bounds":{"minLat":19.79,"maxLat":19.97,"minLon":76.32,"maxLon":76.52},"pitFile":"kehal-wadgaon-dba3570e.json"},{"name":"Ambhor Shelke","pitCount":1126,"actualPitCount":1126,"lat":19.81391075,"lon":76.4615956,"bounds":{"minLat":19.789141784409317,"maxLat":19.84,"minLon":76.45,"maxLon":76.48},"pitFile":"ambhor-shelke-d7b5592c.json"},{"name":"Maharashtra-Jalna-Mantha-null-Pokhari Takle","pitCount":31,"actualPitCount":31,"lat":19.81993728,"lon":76.31967858,"bounds":{"minLat":19.812329,"maxLat":19.8273564,"minLon":76.3134931,"maxLon":76.3288972},"pitFile":"maharashtra-jalna-mantha-null-pokhari-takle-697bdb16.json"},{"name":"Takle Pokhari","pitCount":91,"actualPitCount":91,"lat":19.81993736,"lon":76.32107912,"bounds":{"minLat":19.81,"maxLat":19.83,"minLon":76.31,"maxLon":76.33},"pitFile":"takle-pokhari-4d56fc83.json"},{"name":"Maharashtra-Jalna-Mantha-null-Mahora","pitCount":22,"actualPitCount":22,"lat":19.81998585,"lon":76.3315434,"bounds":{"minLat":19.8124084,"maxLat":19.8276434,"minLon":76.3260617,"maxLon":76.3402313},"pitFile":"maharashtra-jalna-mantha-null-mahora-ce148a3b.json"},{"name":"Maharashtra-Jalna-Mantha-null-Andhwadi","pitCount":131,"actualPitCount":131,"lat":19.82052493,"lon":76.45264398,"bounds":{"minLat":19.8152757,"maxLat":19.82276,"minLon":76.4346877,"maxLon":76.4590415},"pitFile":"maharashtra-jalna-mantha-null-andhwadi-0fe88e8a.json"},{"name":"Maharashtra-Jalna-Mantha-null-Dahifal Khandare","pitCount":346,"actualPitCount":346,"lat":19.82224736,"lon":76.42422459,"bounds":{"minLat":19.8132901,"maxLat":19.8336167,"minLon":76.3969074,"maxLon":76.4521369},"pitFile":"maharashtra-jalna-mantha-null-dahifal-khandare-343b418c.json"},{"name":"Malegaon","pitCount":39,"actualPitCount":39,"lat":19.82669456,"lon":76.38995425,"bounds":{"minLat":19.8,"maxLat":19.91,"minLon":76.32,"maxLon":76.49},"pitFile":"malegaon-cfe494f7.json"},{"name":"Maharashtra-Jalna-Jalna-null-Warkheda","pitCount":270,"actualPitCount":271,"lat":19.82783333,"lon":76.30257951,"bounds":{"minLat":19.8065917,"maxLat":19.8473917,"minLon":76.2896187,"maxLon":76.317053},"pitFile":"maharashtra-jalna-jalna-null-warkheda-40c043c9.json"},{"name":"Maharashtra-Jalna-Jalna-null-Nagapur","pitCount":6,"actualPitCount":6,"lat":19.82966092,"lon":76.2355841,"bounds":{"minLat":19.8270347,"maxLat":19.8337538,"minLon":76.225422,"maxLon":76.2490292},"pitFile":"maharashtra-jalna-jalna-null-nagapur-ca2e5cfc.json"},{"name":"Maharashtra-Jalna-Mantha-null-Uswad (Devthana)","pitCount":324,"actualPitCount":324,"lat":19.83503872,"lon":76.46620716,"bounds":{"minLat":19.8257405,"maxLat":19.8466577,"minLon":76.4537351,"maxLon":76.4916101},"pitFile":"maharashtra-jalna-mantha-null-uswad-devthana-216cdc57.json"},{"name":"Jaipur","pitCount":219,"actualPitCount":219,"lat":19.83690559,"lon":76.34558493,"bounds":{"minLat":19.68,"maxLat":19.86,"minLon":76.26,"maxLon":76.39},"pitFile":"jaipur-d8289ef7.json"},{"name":"Maharashtra-Jalna-Mantha-null-Hanwat Kheda","pitCount":375,"actualPitCount":375,"lat":19.83893767,"lon":76.44382437,"bounds":{"minLat":19.8274331,"maxLat":19.8474733333333,"minLon":76.4330252,"maxLon":76.4577017},"pitFile":"maharashtra-jalna-mantha-null-hanwat-kheda-da4aa14e.json"},{"name":"Maharashtra-Jalna-Jalna-null-Erandwadgaon","pitCount":53,"actualPitCount":53,"lat":19.84373631,"lon":76.31072948,"bounds":{"minLat":19.833115,"maxLat":19.8660832,"minLon":76.2964654,"maxLon":76.3544321},"pitFile":"maharashtra-jalna-jalna-null-erandwadgaon-b7fd020f.json"},{"name":"Maharashtra-Jalna-Jalna-null-Bibi","pitCount":184,"actualPitCount":184,"lat":19.84975449,"lon":76.27395037,"bounds":{"minLat":19.8396845,"maxLat":19.8549034,"minLon":76.2637367,"maxLon":76.2855267},"pitFile":"maharashtra-jalna-jalna-null-bibi-1a5dd234.json"},{"name":"Jambharun","pitCount":14,"actualPitCount":14,"lat":19.8502563,"lon":76.40040426,"bounds":{"minLat":19.84,"maxLat":19.86,"minLon":76.36,"maxLon":76.42},"pitFile":"jambharun-6e1577ba.json"},{"name":"Pasta","pitCount":90,"actualPitCount":90,"lat":19.85072723,"lon":76.24268407,"bounds":{"minLat":19.83,"maxLat":19.87,"minLon":76.21,"maxLon":76.27},"pitFile":"pasta-46139b0b.json"},{"name":"Daha","pitCount":85,"actualPitCount":85,"lat":19.85330235,"lon":76.38333647,"bounds":{"minLat":19.78,"maxLat":19.86,"minLon":76.33,"maxLon":76.4},"pitFile":"daha-4164fa6f.json"},{"name":"Bibi","pitCount":19,"actualPitCount":19,"lat":19.85356842,"lon":76.27122632,"bounds":{"minLat":19.85,"maxLat":19.86,"minLon":76.26,"maxLon":76.27},"pitFile":"bibi-1a852b5e.json"},{"name":"Sawargaon Bhagde","pitCount":788,"actualPitCount":788,"lat":19.85410461,"lon":76.26678586,"bounds":{"minLat":19.828135973300245,"maxLat":19.89,"minLon":76.25,"maxLon":76.28},"pitFile":"sawargaon-bhagde-db4c20d8.json"},{"name":"Kokarsa","pitCount":21,"actualPitCount":21,"lat":19.85447143,"lon":76.36578095,"bounds":{"minLat":19.85,"maxLat":19.86,"minLon":76.36,"maxLon":76.37},"pitFile":"kokarsa-272dcbd7.json"},{"name":"Sondev","pitCount":44,"actualPitCount":44,"lat":19.85454645,"lon":76.21442732,"bounds":{"minLat":19.85,"maxLat":19.86,"minLon":76.2,"maxLon":76.27},"pitFile":"sondev-82aaafda.json"},{"name":"Savargaon Bhagde","pitCount":120,"actualPitCount":120,"lat":19.85477554,"lon":76.265431,"bounds":{"minLat":19.84,"maxLat":19.88,"minLon":76.25,"maxLon":76.33},"pitFile":"savargaon-bhagde-3fb97c31.json"},{"name":"Maharashtra-Jalna-Jalna-null-Shivnagar","pitCount":5,"actualPitCount":5,"lat":19.85553531,"lon":76.33348717,"bounds":{"minLat":19.8547067,"maxLat":19.8567433333333,"minLon":76.330335,"maxLon":76.3381733333333},"pitFile":"maharashtra-jalna-jalna-null-shivnagar-eee0200a.json"},{"name":"Erandeshwar","pitCount":99,"actualPitCount":99,"lat":19.85605722,"lon":76.34739599,"bounds":{"minLat":19.84,"maxLat":19.86,"minLon":76.24,"maxLon":76.36},"pitFile":"erandeshwar-391e132f.json"},{"name":"Maharashtra-Jalna-Jalna-null-Kharati","pitCount":12,"actualPitCount":12,"lat":19.85636517,"lon":76.48346,"bounds":{"minLat":19.8562501,"maxLat":19.8565351,"minLon":76.4834245,"maxLon":76.4834926},"pitFile":"maharashtra-jalna-jalna-null-kharati-e79d8353.json"},{"name":"Maharashtra-Jalna-Mantha-null-Daha","pitCount":272,"actualPitCount":272,"lat":19.8578228,"lon":76.38635095,"bounds":{"minLat":19.8379594,"maxLat":19.8683297,"minLon":76.3461139,"maxLon":76.4159936},"pitFile":"maharashtra-jalna-mantha-null-daha-cfc81db8.json"},{"name":"Maharashtra-Jalna-Mantha-null-Shivangiri","pitCount":196,"actualPitCount":199,"lat":19.85792652,"lon":76.32552464,"bounds":{"minLat":19.8379625,"maxLat":19.8755199999999,"minLon":76.3107517,"maxLon":76.34698},"pitFile":"maharashtra-jalna-mantha-null-shivangiri-9819fcc7.json"},{"name":"Sondeo","pitCount":1130,"actualPitCount":1130,"lat":19.85793428,"lon":76.21877485,"bounds":{"minLat":19.83,"maxLat":19.88,"minLon":76.2,"maxLon":76.27207311346118},"pitFile":"sondeo-6b1506a2.json"},{"name":"Pashta","pitCount":905,"actualPitCount":905,"lat":19.85811375,"lon":76.24266874,"bounds":{"minLat":19.828211417582757,"maxLat":20.12,"minLon":76.22733887904789,"maxLon":76.38},"pitFile":"pashta-2f9aede4.json"},{"name":"Maharashtra-Jalna-Jalna-null-Sondeo","pitCount":88,"actualPitCount":91,"lat":19.85887638,"lon":76.22298111,"bounds":{"minLat":19.8486254,"maxLat":19.8671746,"minLon":76.2082386,"maxLon":76.2444721},"pitFile":"maharashtra-jalna-jalna-null-sondeo-f26024c3.json"},{"name":"Shivgiri","pitCount":34,"actualPitCount":34,"lat":19.86051484,"lon":76.3206525,"bounds":{"minLat":19.85,"maxLat":19.88,"minLon":76.23,"maxLon":76.34},"pitFile":"shivgiri-31831ed0.json"},{"name":"Maharashtra-Jalna-Mantha-null-Erandeshwar","pitCount":5,"actualPitCount":5,"lat":19.86497234,"lon":76.34930132,"bounds":{"minLat":19.8638217,"maxLat":19.8657933,"minLon":76.3458783,"maxLon":76.3517667},"pitFile":"maharashtra-jalna-mantha-null-erandeshwar-41f131f9.json"},{"name":"Maharashtra-Jalna-Mantha-null-Kokarasa","pitCount":128,"actualPitCount":128,"lat":19.86526988,"lon":76.36739166,"bounds":{"minLat":19.6709166666666,"maxLat":19.8713371,"minLon":76.3583426,"maxLon":76.4545983333333},"pitFile":"maharashtra-jalna-mantha-null-kokarasa-49eacecc.json"},{"name":"Maharashtra-Jalna-Mantha-null-Tupa","pitCount":27,"actualPitCount":27,"lat":19.86672499,"lon":76.39445087,"bounds":{"minLat":19.8367066,"maxLat":19.8795947,"minLon":76.3693926,"maxLon":76.4167169},"pitFile":"maharashtra-jalna-mantha-null-tupa-b9976f10.json"},{"name":"Maharashtra-Jalna-Mantha-null-Belora","pitCount":293,"actualPitCount":298,"lat":19.87216433,"lon":76.35519662,"bounds":{"minLat":19.8562092,"maxLat":19.8896517,"minLon":76.3271733,"maxLon":76.3801983},"pitFile":"maharashtra-jalna-mantha-null-belora-76670116.json"},{"name":"Maharashtra-Jalna-Mantha-null-Kirla","pitCount":133,"actualPitCount":133,"lat":19.87382298,"lon":76.4070853,"bounds":{"minLat":19.8479663,"maxLat":19.888725,"minLon":76.3999183,"maxLon":76.4245838},"pitFile":"maharashtra-jalna-mantha-null-kirla-26607169.json"},{"name":"Pokhari","pitCount":1,"actualPitCount":1,"lat":19.8763,"lon":76.3873,"bounds":{"minLat":19.88,"maxLat":19.88,"minLon":76.39,"maxLon":76.39},"pitFile":"pokhari-93d67dbf.json"},{"name":"Kendhale Pokhari","pitCount":29,"actualPitCount":29,"lat":19.88394704,"lon":76.38138765,"bounds":{"minLat":19.88,"maxLat":19.91,"minLon":76.37,"maxLon":76.43},"pitFile":"kendhale-pokhari-05032c51.json"},{"name":"Maharashtra-Jalna-Mantha-null-Talni","pitCount":751,"actualPitCount":751,"lat":19.88493256,"lon":76.4695781,"bounds":{"minLat":19.8555917,"maxLat":19.9298576,"minLon":76.4442467,"maxLon":76.5028104},"pitFile":"maharashtra-jalna-mantha-null-talni-805f484f.json"},{"name":"Maharashtra-Jalna-Mantha-null-Sirpur","pitCount":5,"actualPitCount":5,"lat":19.89484574,"lon":76.44487892,"bounds":{"minLat":19.8948157,"maxLat":19.8948583,"minLon":76.4448517,"maxLon":76.4449217},"pitFile":"maharashtra-jalna-mantha-null-sirpur-c1ec61e1.json"},{"name":"Vazhar Sarkate","pitCount":126,"actualPitCount":126,"lat":19.90361667,"lon":76.36989603,"bounds":{"minLat":19.89,"maxLat":19.92,"minLon":76.35,"maxLon":76.38},"pitFile":"vazhar-sarkate-5891a378.json"},{"name":"Maharashtra-Jalna-Mantha-null-Wadgaon Sarhadu","pitCount":164,"actualPitCount":164,"lat":19.90888481,"lon":76.47708687,"bounds":{"minLat":19.9017189,"maxLat":19.9153439,"minLon":76.4646353,"maxLon":76.4883208},"pitFile":"maharashtra-jalna-mantha-null-wadgaon-sarhadu-b09b00dd.json"},{"name":"Maharashtra-Jalna-Badnapur-null-Dagadwadi","pitCount":71,"actualPitCount":71,"lat":19.95436637,"lon":75.88540149,"bounds":{"minLat":19.9526283,"maxLat":19.9610917,"minLon":75.8838595,"maxLon":75.8861817},"pitFile":"maharashtra-jalna-badnapur-null-dagadwadi-87399516.json"},{"name":"Maharashtra-Jalna-Badnapur-null-Asola","pitCount":4,"actualPitCount":4,"lat":19.95986113,"lon":75.83532503,"bounds":{"minLat":19.9596291,"maxLat":19.9600434,"minLon":75.8341913,"maxLon":75.8362071},"pitFile":"maharashtra-jalna-badnapur-null-asola-82dd875e.json"}]}
+{
+  "version": "cf58ed115a0162d3",
+  "villages": [
+    {
+      "name": "Karnataka-Vijayanagar-Kudligi-null-Poojarahalli",
+      "pitCount": 32,
+      "actualPitCount": 32,
+      "lat": 14.61658349,
+      "lon": 76.54514897,
+      "bounds": {
+        "minLat": 14.6083128,
+        "maxLat": 14.658816,
+        "minLon": 76.5330595,
+        "maxLon": 76.5831386
+      },
+      "pitFile": "karnataka-vijayanagar-kudligi-null-poojarahalli-135374ac.json"
+    },
+    {
+      "name": "Karnataka-Vijayanagar-Kotturu-null-Kandagal",
+      "pitCount": 13,
+      "actualPitCount": 13,
+      "lat": 14.88346411,
+      "lon": 76.28691526,
+      "bounds": {
+        "minLat": 14.8739267,
+        "maxLat": 14.8916466666666,
+        "minLon": 76.2820816666666,
+        "maxLon": 76.291115
+      },
+      "pitFile": "karnataka-vijayanagar-kotturu-null-kandagal-4fcaa511.json"
+    },
+    {
+      "name": "Karnataka-Vijayanagar-Harapanahalli-null-Kadathi",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 14.9733367,
+      "lon": 76.319545,
+      "bounds": {
+        "minLat": 14.9733367,
+        "maxLat": 14.9733367,
+        "minLon": 76.319545,
+        "maxLon": 76.319545
+      },
+      "pitFile": "karnataka-vijayanagar-harapanahalli-null-kadathi-0a278d1a.json"
+    },
+    {
+      "name": "Karnataka-Vijayanagar-Hagaribommanahalli-null-Dasmapura",
+      "pitCount": 7,
+      "actualPitCount": 7,
+      "lat": 14.97361024,
+      "lon": 76.31958324,
+      "bounds": {
+        "minLat": 14.9729494,
+        "maxLat": 14.9746786,
+        "minLon": 76.3192892,
+        "maxLon": 76.3199649
+      },
+      "pitFile": "karnataka-vijayanagar-hagaribommanahalli-null-dasmapura-338ecc76.json"
+    },
+    {
+      "name": "Karnataka-Ballari-Ballari-null-Sindhavalam",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 15.3256107,
+      "lon": 77.0751905,
+      "bounds": {
+        "minLat": 15.3256107,
+        "maxLat": 15.3256107,
+        "minLon": 77.0751905,
+        "maxLon": 77.0751905
+      },
+      "pitFile": "karnataka-ballari-ballari-null-sindhavalam-4b99c80f.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Warphal",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.3548437,
+      "lon": 76.582793,
+      "bounds": {
+        "minLat": 19.3548437,
+        "maxLat": 19.3548437,
+        "minLon": 76.582793,
+        "maxLon": 76.582793
+      },
+      "pitFile": "maharashtra-jalna-partur-null-warphal-69bb77c1.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Bramhanwadi",
+      "pitCount": 211,
+      "actualPitCount": 211,
+      "lat": 19.38012249,
+      "lon": 76.26673032,
+      "bounds": {
+        "minLat": 19.3557125,
+        "maxLat": 19.41903991,
+        "minLon": 76.17448492,
+        "maxLon": 76.280345
+      },
+      "pitFile": "maharashtra-jalna-partur-null-bramhanwadi-9af65779.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Ashti",
+      "pitCount": 152,
+      "actualPitCount": 152,
+      "lat": 19.3802161,
+      "lon": 76.22132793,
+      "bounds": {
+        "minLat": 19.3458665,
+        "maxLat": 19.3994483333333,
+        "minLon": 76.2016811,
+        "maxLon": 76.2464175
+      },
+      "pitFile": "maharashtra-jalna-partur-null-ashti-6548f206.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Akoli",
+      "pitCount": 384,
+      "actualPitCount": 385,
+      "lat": 19.39317791,
+      "lon": 76.25786365,
+      "bounds": {
+        "minLat": 19.3524224,
+        "maxLat": 19.4237777,
+        "minLon": 76.1937695,
+        "maxLon": 76.331538
+      },
+      "pitFile": "maharashtra-jalna-partur-null-akoli-b3fcd3de.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Sawargaon Bhagde",
+      "pitCount": 4,
+      "actualPitCount": 4,
+      "lat": 19.39522558,
+      "lon": 76.2412318,
+      "bounds": {
+        "minLat": 19.395208,
+        "maxLat": 19.3952484,
+        "minLon": 76.241192,
+        "maxLon": 76.2412979
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-sawargaon-bhagde-49942d7e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Asangaon",
+      "pitCount": 124,
+      "actualPitCount": 124,
+      "lat": 19.40067399,
+      "lon": 76.14938438,
+      "bounds": {
+        "minLat": 19.3903486,
+        "maxLat": 19.4051223993301,
+        "minLon": 76.1413716666666,
+        "maxLon": 76.1548835
+      },
+      "pitFile": "maharashtra-jalna-partur-null-asangaon-d0afec2a.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Pandepokhari",
+      "pitCount": 259,
+      "actualPitCount": 264,
+      "lat": 19.41595085,
+      "lon": 76.17162139,
+      "bounds": {
+        "minLat": 19.3825463,
+        "maxLat": 19.4620152,
+        "minLon": 76.0712807,
+        "maxLon": 76.1984784
+      },
+      "pitFile": "maharashtra-jalna-partur-null-pandepokhari-8cf1bcbc.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Likhit Pimpri",
+      "pitCount": 83,
+      "actualPitCount": 83,
+      "lat": 19.42719563,
+      "lon": 76.27483777,
+      "bounds": {
+        "minLat": 19.4185417,
+        "maxLat": 19.4344233,
+        "minLon": 76.26973696,
+        "maxLon": 76.2787143
+      },
+      "pitFile": "maharashtra-jalna-partur-null-likhit-pimpri-2181a1c1.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Ghansawangi-null-Dahegaon Devi",
+      "pitCount": 160,
+      "actualPitCount": 160,
+      "lat": 19.45656383,
+      "lon": 76.07231725,
+      "bounds": {
+        "minLat": 19.4436967,
+        "maxLat": 19.4782993,
+        "minLon": 76.0531518,
+        "maxLon": 76.0929062
+      },
+      "pitFile": "maharashtra-jalna-ghansawangi-null-dahegaon-devi-1c0fccce.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Shrishti Tanda",
+      "pitCount": 6,
+      "actualPitCount": 6,
+      "lat": 19.46308952,
+      "lon": 76.23351127,
+      "bounds": {
+        "minLat": 19.4621449,
+        "maxLat": 19.4640732,
+        "minLon": 76.233056,
+        "maxLon": 76.2342614
+      },
+      "pitFile": "maharashtra-jalna-partur-null-shrishti-tanda-17c295c7.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Shrishti",
+      "pitCount": 277,
+      "actualPitCount": 277,
+      "lat": 19.46523222,
+      "lon": 76.23281394,
+      "bounds": {
+        "minLat": 19.4505033,
+        "maxLat": 19.4879485,
+        "minLon": 76.21414,
+        "maxLon": 76.2488171
+      },
+      "pitFile": "maharashtra-jalna-partur-null-shrishti-5087c755.json"
+    },
+    {
+      "name": "Shrishti",
+      "pitCount": 60,
+      "actualPitCount": 60,
+      "lat": 19.47653606,
+      "lon": 76.22975157,
+      "bounds": {
+        "minLat": 19.47,
+        "maxLat": 19.492053725997955,
+        "minLon": 76.21,
+        "maxLon": 76.24
+      },
+      "pitFile": "shrishti-9c907497.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Satona Kh.",
+      "pitCount": 418,
+      "actualPitCount": 419,
+      "lat": 19.48222954,
+      "lon": 76.35165218,
+      "bounds": {
+        "minLat": 19.468785,
+        "maxLat": 19.5028833,
+        "minLon": 76.3418117,
+        "maxLon": 76.3700067
+      },
+      "pitFile": "maharashtra-jalna-partur-null-satona-kh-33324f84.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Satona Bk.",
+      "pitCount": 85,
+      "actualPitCount": 85,
+      "lat": 19.50137394,
+      "lon": 76.32299748,
+      "bounds": {
+        "minLat": 19.1787306,
+        "maxLat": 19.7765316,
+        "minLon": 76.29917,
+        "maxLon": 77.0264961
+      },
+      "pitFile": "maharashtra-jalna-partur-null-satona-bk-44c9a858.json"
+    },
+    {
+      "name": "Pimprula",
+      "pitCount": 329,
+      "actualPitCount": 329,
+      "lat": 19.50455703,
+      "lon": 76.25788165,
+      "bounds": {
+        "minLat": 19.485917090938834,
+        "maxLat": 19.510477322514912,
+        "minLon": 76.24677714399843,
+        "maxLon": 76.26225458958443
+      },
+      "pitFile": "pimprula-4f920922.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Pimprula Bk.",
+      "pitCount": 171,
+      "actualPitCount": 171,
+      "lat": 19.50678607,
+      "lon": 76.25911859,
+      "bounds": {
+        "minLat": 19.4806283333333,
+        "maxLat": 19.8882498,
+        "minLon": 76.24794,
+        "maxLon": 76.4492427
+      },
+      "pitFile": "maharashtra-jalna-partur-null-pimprula-bk-7661d928.json"
+    },
+    {
+      "name": "Khandviwadi",
+      "pitCount": 968,
+      "actualPitCount": 968,
+      "lat": 19.51563564,
+      "lon": 76.23755718,
+      "bounds": {
+        "minLat": 19.490829962598742,
+        "maxLat": 19.53180859818848,
+        "minLon": 76.2,
+        "maxLon": 76.26
+      },
+      "pitFile": "khandviwadi-a2bbcd9e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Hatdi",
+      "pitCount": 27,
+      "actualPitCount": 27,
+      "lat": 19.52134184,
+      "lon": 76.16385698,
+      "bounds": {
+        "minLat": 19.516655,
+        "maxLat": 19.5357833333333,
+        "minLon": 76.1051456,
+        "maxLon": 76.1836517
+      },
+      "pitFile": "maharashtra-jalna-partur-null-hatdi-26666ea2.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Sirasgaon",
+      "pitCount": 2,
+      "actualPitCount": 2,
+      "lat": 19.52155755,
+      "lon": 76.2311258,
+      "bounds": {
+        "minLat": 19.5214983,
+        "maxLat": 19.5216168,
+        "minLon": 76.23111,
+        "maxLon": 76.2311416
+      },
+      "pitFile": "maharashtra-jalna-partur-null-sirasgaon-50446085.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Khandviwadi",
+      "pitCount": 252,
+      "actualPitCount": 252,
+      "lat": 19.52486725,
+      "lon": 76.24837315,
+      "bounds": {
+        "minLat": 19.49841,
+        "maxLat": 19.857925,
+        "minLon": 76.2072504,
+        "maxLon": 76.386395
+      },
+      "pitFile": "maharashtra-jalna-partur-null-khandviwadi-352a7701.json"
+    },
+    {
+      "name": "Khandvi",
+      "pitCount": 769,
+      "actualPitCount": 769,
+      "lat": 19.5317573,
+      "lon": 76.26464573,
+      "bounds": {
+        "minLat": 19.49469690255366,
+        "maxLat": 19.686153163368026,
+        "minLon": 76.24481002899428,
+        "maxLon": 76.28
+      },
+      "pitFile": "khandvi-38a57173.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Hastur Tanda",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.53179,
+      "lon": 76.1736217,
+      "bounds": {
+        "minLat": 19.53179,
+        "maxLat": 19.53179,
+        "minLon": 76.1736217,
+        "maxLon": 76.1736217
+      },
+      "pitFile": "maharashtra-jalna-partur-null-hastur-tanda-9da0b7ba.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Soijana",
+      "pitCount": 4,
+      "actualPitCount": 4,
+      "lat": 19.53345715,
+      "lon": 76.17033888,
+      "bounds": {
+        "minLat": 19.5334468,
+        "maxLat": 19.5334674,
+        "minLon": 76.1703109,
+        "maxLon": 76.1703633
+      },
+      "pitFile": "maharashtra-jalna-partur-null-soijana-50457902.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Warphalwadi",
+      "pitCount": 9,
+      "actualPitCount": 9,
+      "lat": 19.55700478,
+      "lon": 76.26848668,
+      "bounds": {
+        "minLat": 19.5163087,
+        "maxLat": 19.570125,
+        "minLon": 76.2346228,
+        "maxLon": 76.3252166
+      },
+      "pitFile": "maharashtra-jalna-partur-null-warphalwadi-48bb4971.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Eakrukha",
+      "pitCount": 300,
+      "actualPitCount": 300,
+      "lat": 19.59504082,
+      "lon": 76.2556555,
+      "bounds": {
+        "minLat": 19.5891503,
+        "maxLat": 19.6083381,
+        "minLon": 76.2508199,
+        "maxLon": 76.2596998
+      },
+      "pitFile": "maharashtra-jalna-partur-null-eakrukha-f81ea7f5.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Nagapur",
+      "pitCount": 199,
+      "actualPitCount": 200,
+      "lat": 19.59514241,
+      "lon": 76.26175033,
+      "bounds": {
+        "minLat": 19.5891348,
+        "maxLat": 19.8120417,
+        "minLon": 76.2595731,
+        "maxLon": 76.4042183
+      },
+      "pitFile": "maharashtra-jalna-partur-null-nagapur-a985f692.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Masla",
+      "pitCount": 64,
+      "actualPitCount": 72,
+      "lat": 19.61705505,
+      "lon": 76.18568204,
+      "bounds": {
+        "minLat": 19.590901,
+        "maxLat": 19.6235978833333,
+        "minLon": 76.1705848,
+        "maxLon": 76.214415
+      },
+      "pitFile": "maharashtra-jalna-partur-null-masla-079cb78b.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Amba",
+      "pitCount": 69,
+      "actualPitCount": 71,
+      "lat": 19.61903864,
+      "lon": 76.20967405,
+      "bounds": {
+        "minLat": 19.605348,
+        "maxLat": 19.6486299,
+        "minLon": 76.1882409,
+        "maxLon": 76.2221145
+      },
+      "pitFile": "maharashtra-jalna-partur-null-amba-63f159ac.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Ranmala",
+      "pitCount": 9,
+      "actualPitCount": 9,
+      "lat": 19.61907495,
+      "lon": 76.40912808,
+      "bounds": {
+        "minLat": 19.61673,
+        "maxLat": 19.6229807,
+        "minLon": 76.4005567,
+        "maxLon": 76.4377133
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-ranmala-6fd4ecaf.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Helas",
+      "pitCount": 246,
+      "actualPitCount": 247,
+      "lat": 19.63068225,
+      "lon": 76.41782539,
+      "bounds": {
+        "minLat": 19.5980801,
+        "maxLat": 19.7005283,
+        "minLon": 76.3852277,
+        "maxLon": 76.44129416
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-helas-55704738.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Karnawal",
+      "pitCount": 598,
+      "actualPitCount": 599,
+      "lat": 19.63147916,
+      "lon": 76.44456293,
+      "bounds": {
+        "minLat": 19.6189918,
+        "maxLat": 19.64558,
+        "minLon": 76.3903158,
+        "maxLon": 76.4615505
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-karnawal-6dba5b61.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Kawjawala",
+      "pitCount": 26,
+      "actualPitCount": 27,
+      "lat": 19.6424144,
+      "lon": 76.15844336,
+      "bounds": {
+        "minLat": 19.6134468,
+        "maxLat": 19.6571971,
+        "minLon": 76.1231361,
+        "maxLon": 76.1905374
+      },
+      "pitFile": "maharashtra-jalna-partur-null-kawjawala-ee0b30c7.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Kandari",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.6509017,
+      "lon": 76.2553483,
+      "bounds": {
+        "minLat": 19.6509017,
+        "maxLat": 19.6509017,
+        "minLon": 76.2553483,
+        "maxLon": 76.2553483
+      },
+      "pitFile": "maharashtra-jalna-partur-null-kandari-44d4b31d.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Khadki",
+      "pitCount": 395,
+      "actualPitCount": 397,
+      "lat": 19.65203917,
+      "lon": 76.2461254,
+      "bounds": {
+        "minLat": 19.6385938,
+        "maxLat": 19.6850572,
+        "minLon": 76.2300317,
+        "maxLon": 76.2661959
+      },
+      "pitFile": "maharashtra-jalna-partur-null-khadki-b9ac3fd5.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Babultara",
+      "pitCount": 869,
+      "actualPitCount": 871,
+      "lat": 19.66804603,
+      "lon": 76.20043398,
+      "bounds": {
+        "minLat": 19.6383452,
+        "maxLat": 19.7043158,
+        "minLon": 76.141236,
+        "maxLon": 76.2134538
+      },
+      "pitFile": "maharashtra-jalna-partur-null-babultara-735f7c66.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Malkini",
+      "pitCount": 409,
+      "actualPitCount": 409,
+      "lat": 19.6748001,
+      "lon": 76.46037551,
+      "bounds": {
+        "minLat": 19.62048,
+        "maxLat": 19.7189821,
+        "minLon": 76.4315433,
+        "maxLon": 76.5228666
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-malkini-cddce6d3.json"
+    },
+    {
+      "name": "Umbarkheda",
+      "pitCount": 138,
+      "actualPitCount": 138,
+      "lat": 19.6822674,
+      "lon": 76.39275071,
+      "bounds": {
+        "minLat": 19.65,
+        "maxLat": 19.71,
+        "minLon": 76.38,
+        "maxLon": 76.41
+      },
+      "pitFile": "umbarkheda-075d61dc.json"
+    },
+    {
+      "name": "Watur",
+      "pitCount": 300,
+      "actualPitCount": 300,
+      "lat": 19.68304599,
+      "lon": 76.27235561,
+      "bounds": {
+        "minLat": 19.585118333333334,
+        "maxLat": 20.199259964176754,
+        "minLon": 76.21,
+        "maxLon": 77.29124025227215
+      },
+      "pitFile": "watur-f414dc4e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Yenora",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.685422,
+      "lon": 76.2690921,
+      "bounds": {
+        "minLat": 19.685422,
+        "maxLat": 19.685422,
+        "minLon": 76.2690921,
+        "maxLon": 76.2690921
+      },
+      "pitFile": "maharashtra-jalna-partur-null-yenora-e8cabc80.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Partur-null-Watur",
+      "pitCount": 27,
+      "actualPitCount": 27,
+      "lat": 19.68732243,
+      "lon": 76.26933193,
+      "bounds": {
+        "minLat": 19.6832145,
+        "maxLat": 19.6895853,
+        "minLon": 76.2654258,
+        "maxLon": 76.2737154
+      },
+      "pitFile": "maharashtra-jalna-partur-null-watur-0b954a99.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Akani",
+      "pitCount": 14,
+      "actualPitCount": 14,
+      "lat": 19.69208276,
+      "lon": 76.33291814,
+      "bounds": {
+        "minLat": 19.664912,
+        "maxLat": 19.7029478,
+        "minLon": 76.30427,
+        "maxLon": 76.3464598
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-akani-9acd0b95.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Meskheda",
+      "pitCount": 169,
+      "actualPitCount": 169,
+      "lat": 19.69259591,
+      "lon": 76.37121827,
+      "bounds": {
+        "minLat": 19.6804321,
+        "maxLat": 19.69889,
+        "minLon": 76.3600881,
+        "maxLon": 76.376277
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-meskheda-ffae8d4c.json"
+    },
+    {
+      "name": "Murum Kheda",
+      "pitCount": 185,
+      "actualPitCount": 185,
+      "lat": 19.6957298,
+      "lon": 76.39848803,
+      "bounds": {
+        "minLat": 19.65,
+        "maxLat": 19.71,
+        "minLon": 76.37,
+        "maxLon": 76.47
+      },
+      "pitFile": "murum-kheda-49885c67.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Ambhoda Kadam",
+      "pitCount": 5,
+      "actualPitCount": 5,
+      "lat": 19.69789198,
+      "lon": 76.46208078,
+      "bounds": {
+        "minLat": 19.6977989,
+        "maxLat": 19.6980133,
+        "minLon": 76.461763,
+        "maxLon": 76.4624296
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-ambhoda-kadam-c7b904c5.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Limbona",
+      "pitCount": 20,
+      "actualPitCount": 20,
+      "lat": 19.69982044,
+      "lon": 76.34793312,
+      "bounds": {
+        "minLat": 19.6985982,
+        "maxLat": 19.7009824,
+        "minLon": 76.3443186,
+        "maxLon": 76.3531905
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-limbona-9550b9de.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Wirgavhan",
+      "pitCount": 489,
+      "actualPitCount": 489,
+      "lat": 19.70141805,
+      "lon": 76.453602,
+      "bounds": {
+        "minLat": 19.6826313,
+        "maxLat": 19.7114783,
+        "minLon": 76.4362433,
+        "maxLon": 76.4661823
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-wirgavhan-5ff8219a.json"
+    },
+    {
+      "name": "Dudha",
+      "pitCount": 3,
+      "actualPitCount": 3,
+      "lat": 19.70156667,
+      "lon": 76.47363333,
+      "bounds": {
+        "minLat": 19.7,
+        "maxLat": 19.7,
+        "minLon": 76.47,
+        "maxLon": 76.47
+      },
+      "pitFile": "dudha-48bff429.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pakni",
+      "pitCount": 19,
+      "actualPitCount": 19,
+      "lat": 19.70465496,
+      "lon": 76.31160902,
+      "bounds": {
+        "minLat": 19.6987726,
+        "maxLat": 19.71079,
+        "minLon": 76.3038254,
+        "maxLon": 76.3207116
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pakni-e8a58156.json"
+    },
+    {
+      "name": "Amboda Kadam",
+      "pitCount": 131,
+      "actualPitCount": 131,
+      "lat": 19.70478321,
+      "lon": 76.46831069,
+      "bounds": {
+        "minLat": 19.69,
+        "maxLat": 19.72,
+        "minLon": 76.45,
+        "maxLon": 76.48
+      },
+      "pitFile": "amboda-kadam-6ea550b9.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Ramtirth",
+      "pitCount": 169,
+      "actualPitCount": 170,
+      "lat": 19.70600977,
+      "lon": 76.41717465,
+      "bounds": {
+        "minLat": 19.694269,
+        "maxLat": 19.7144044,
+        "minLon": 76.4060503,
+        "maxLon": 76.4398583
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-ramtirth-db58135b.json"
+    },
+    {
+      "name": "Arda Tolaji",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.7079,
+      "lon": 76.4651,
+      "bounds": {
+        "minLat": 19.71,
+        "maxLat": 19.71,
+        "minLon": 76.47,
+        "maxLon": 76.47
+      },
+      "pitFile": "arda-tolaji-390d079d.json"
+    },
+    {
+      "name": "Taltondi",
+      "pitCount": 89,
+      "actualPitCount": 89,
+      "lat": 19.70935281,
+      "lon": 76.3913191,
+      "bounds": {
+        "minLat": 19.7,
+        "maxLat": 19.72,
+        "minLon": 76.38,
+        "maxLon": 76.4
+      },
+      "pitFile": "taltondi-0dd191f5.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Kanphodi",
+      "pitCount": 3,
+      "actualPitCount": 3,
+      "lat": 19.70964667,
+      "lon": 76.29051617,
+      "bounds": {
+        "minLat": 19.7006564,
+        "maxLat": 19.7171705,
+        "minLon": 76.2875977,
+        "maxLon": 76.2944323
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-kanphodi-aaabd7bd.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Sawargaon Wayal",
+      "pitCount": 201,
+      "actualPitCount": 201,
+      "lat": 19.71419582,
+      "lon": 76.34079541,
+      "bounds": {
+        "minLat": 19.7027512,
+        "maxLat": 19.7338319,
+        "minLon": 76.3281812,
+        "maxLon": 76.3634101
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-sawargaon-wayal-019e0a43.json"
+    },
+    {
+      "name": "Wayal Pangri",
+      "pitCount": 132,
+      "actualPitCount": 132,
+      "lat": 19.71601288,
+      "lon": 76.45119394,
+      "bounds": {
+        "minLat": 19.69,
+        "maxLat": 19.73,
+        "minLon": 76.41,
+        "maxLon": 76.49
+      },
+      "pitFile": "wayal-pangri-d53cc8ce.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pangri Bk.",
+      "pitCount": 184,
+      "actualPitCount": 184,
+      "lat": 19.71763128,
+      "lon": 76.44698729,
+      "bounds": {
+        "minLat": 19.6940583,
+        "maxLat": 19.7249683,
+        "minLon": 76.26696,
+        "maxLon": 76.4555183
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pangri-bk-04ad6c08.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Wai",
+      "pitCount": 44,
+      "actualPitCount": 45,
+      "lat": 19.71987183,
+      "lon": 76.22650035,
+      "bounds": {
+        "minLat": 19.711592,
+        "maxLat": 19.7323683,
+        "minLon": 76.2148409,
+        "maxLon": 76.2386612
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-wai-5011be28.json"
+    },
+    {
+      "name": "Maltondi",
+      "pitCount": 179,
+      "actualPitCount": 179,
+      "lat": 19.72981285,
+      "lon": 76.40175923,
+      "bounds": {
+        "minLat": 19.64,
+        "maxLat": 19.74,
+        "minLon": 76.39,
+        "maxLon": 76.47
+      },
+      "pitFile": "maltondi-828ecbac.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Maltondi",
+      "pitCount": 557,
+      "actualPitCount": 571,
+      "lat": 19.73012577,
+      "lon": 76.39992539,
+      "bounds": {
+        "minLat": 19.660715,
+        "maxLat": 19.7516078,
+        "minLon": 76.3857147,
+        "maxLon": 76.4734794
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-maltondi-ac42d8b2.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Lawni",
+      "pitCount": 18,
+      "actualPitCount": 18,
+      "lat": 19.73392438,
+      "lon": 76.30693553,
+      "bounds": {
+        "minLat": 19.7185596,
+        "maxLat": 19.8388495,
+        "minLon": 76.3012101,
+        "maxLon": 76.3452108
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-lawni-6f0e29fb.json"
+    },
+    {
+      "name": "Pandurna",
+      "pitCount": 41,
+      "actualPitCount": 41,
+      "lat": 19.7383711,
+      "lon": 76.38518666,
+      "bounds": {
+        "minLat": 19.73,
+        "maxLat": 19.77,
+        "minLon": 76.34,
+        "maxLon": 76.4
+      },
+      "pitFile": "pandurna-0c0b1390.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pangri (Gosavi)",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.741826,
+      "lon": 76.3012947,
+      "bounds": {
+        "minLat": 19.741826,
+        "maxLat": 19.741826,
+        "minLon": 76.3012947,
+        "maxLon": 76.3012947
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pangri-gosavi-c187f794.json"
+    },
+    {
+      "name": "Dhoksala",
+      "pitCount": 5,
+      "actualPitCount": 5,
+      "lat": 19.74338349,
+      "lon": 76.37863214,
+      "bounds": {
+        "minLat": 19.74,
+        "maxLat": 19.74,
+        "minLon": 76.38,
+        "maxLon": 76.38
+      },
+      "pitFile": "dhoksala-9ac9ae88.json"
+    },
+    {
+      "name": "Dhara",
+      "pitCount": 4,
+      "actualPitCount": 4,
+      "lat": 19.744575,
+      "lon": 76.288275,
+      "bounds": {
+        "minLat": 19.61,
+        "maxLat": 19.84,
+        "minLon": 76.21,
+        "maxLon": 76.48
+      },
+      "pitFile": "dhara-d7b7a227.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Dhoksal",
+      "pitCount": 107,
+      "actualPitCount": 107,
+      "lat": 19.74811114,
+      "lon": 76.36996163,
+      "bounds": {
+        "minLat": 19.7370235,
+        "maxLat": 19.7573883,
+        "minLon": 76.3586267,
+        "maxLon": 76.3755259
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-dhoksal-2a98b337.json"
+    },
+    {
+      "name": "Wadegaon",
+      "pitCount": 77,
+      "actualPitCount": 77,
+      "lat": 19.75261277,
+      "lon": 76.3867855,
+      "bounds": {
+        "minLat": 19.74,
+        "maxLat": 19.76,
+        "minLon": 76.38,
+        "maxLon": 76.39
+      },
+      "pitFile": "wadegaon-f416fad9.json"
+    },
+    {
+      "name": "Dhoksal",
+      "pitCount": 87,
+      "actualPitCount": 87,
+      "lat": 19.7555248,
+      "lon": 76.36920135,
+      "bounds": {
+        "minLat": 19.74,
+        "maxLat": 19.77,
+        "minLon": 76.35,
+        "maxLon": 76.39
+      },
+      "pitFile": "dhoksal-850f0bf9.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pangra Gadadhe",
+      "pitCount": 69,
+      "actualPitCount": 69,
+      "lat": 19.75909877,
+      "lon": 76.44549879,
+      "bounds": {
+        "minLat": 19.7382246,
+        "maxLat": 19.7758354,
+        "minLon": 76.4257036,
+        "maxLon": 76.4578164
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pangra-gadadhe-7b114264.json"
+    },
+    {
+      "name": "Waghoda",
+      "pitCount": 26,
+      "actualPitCount": 26,
+      "lat": 19.75998111,
+      "lon": 76.34867554,
+      "bounds": {
+        "minLat": 19.72,
+        "maxLat": 19.77,
+        "minLon": 76.33,
+        "maxLon": 76.46
+      },
+      "pitFile": "waghoda-7c230dc0.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Kinkheda",
+      "pitCount": 162,
+      "actualPitCount": 162,
+      "lat": 19.77005485,
+      "lon": 76.44767249,
+      "bounds": {
+        "minLat": 19.7648283,
+        "maxLat": 19.77396,
+        "minLon": 76.4362431,
+        "maxLon": 76.4609933
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-kinkheda-569b6843.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Shambhu Sawargaon",
+      "pitCount": 410,
+      "actualPitCount": 410,
+      "lat": 19.77033596,
+      "lon": 76.26541291,
+      "bounds": {
+        "minLat": 19.7616505,
+        "maxLat": 19.7793567,
+        "minLon": 76.2497,
+        "maxLon": 76.2750877
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-shambhu-sawargaon-ddc14680.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Khorad Sawangi",
+      "pitCount": 625,
+      "actualPitCount": 631,
+      "lat": 19.77574409,
+      "lon": 76.41117365,
+      "bounds": {
+        "minLat": 19.762145,
+        "maxLat": 19.79516,
+        "minLon": 76.4033667,
+        "maxLon": 76.4535683
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-khorad-sawangi-35202d0e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Malsawangi",
+      "pitCount": 25,
+      "actualPitCount": 27,
+      "lat": 19.77797716,
+      "lon": 76.40455851,
+      "bounds": {
+        "minLat": 19.7774583,
+        "maxLat": 19.7783599,
+        "minLon": 76.4039666,
+        "maxLon": 76.4050015
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-malsawangi-7bb93e53.json"
+    },
+    {
+      "name": "Ganeshpur",
+      "pitCount": 303,
+      "actualPitCount": 303,
+      "lat": 19.77898383,
+      "lon": 76.3422772,
+      "bounds": {
+        "minLat": 19.77,
+        "maxLat": 19.8,
+        "minLon": 76.33,
+        "maxLon": 76.35
+      },
+      "pitFile": "ganeshpur-8c27da2e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pandhurna",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.7798633,
+      "lon": 76.4094733,
+      "bounds": {
+        "minLat": 19.7798633,
+        "maxLat": 19.7798633,
+        "minLon": 76.4094733,
+        "maxLon": 76.4094733
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pandhurna-48e21ded.json"
+    },
+    {
+      "name": "Kirtapur",
+      "pitCount": 486,
+      "actualPitCount": 486,
+      "lat": 19.78000531,
+      "lon": 76.48165583,
+      "bounds": {
+        "minLat": 19.76517336165728,
+        "maxLat": 19.82,
+        "minLon": 76.45,
+        "maxLon": 76.50152523347523
+      },
+      "pitFile": "kirtapur-17a863e7.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pewa",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.7802477,
+      "lon": 76.4612389,
+      "bounds": {
+        "minLat": 19.7802477,
+        "maxLat": 19.7802477,
+        "minLon": 76.4612389,
+        "maxLon": 76.4612389
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pewa-842e43b1.json"
+    },
+    {
+      "name": "Varud",
+      "pitCount": 155,
+      "actualPitCount": 155,
+      "lat": 19.78076516,
+      "lon": 76.32626452,
+      "bounds": {
+        "minLat": 19.77,
+        "maxLat": 19.79,
+        "minLon": 76.31,
+        "maxLon": 76.34
+      },
+      "pitFile": "varud-6b289071.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Vaidhywadgaon",
+      "pitCount": 216,
+      "actualPitCount": 216,
+      "lat": 19.78441287,
+      "lon": 76.32083342,
+      "bounds": {
+        "minLat": 19.772372,
+        "maxLat": 19.7905638,
+        "minLon": 76.3036123,
+        "maxLon": 76.3314349
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-vaidhywadgaon-3fc3f647.json"
+    },
+    {
+      "name": "Vaidya Wadgaon",
+      "pitCount": 37,
+      "actualPitCount": 37,
+      "lat": 19.78571081,
+      "lon": 76.31601351,
+      "bounds": {
+        "minLat": 19.7,
+        "maxLat": 19.79,
+        "minLon": 76.31,
+        "maxLon": 76.47
+      },
+      "pitFile": "vaidya-wadgaon-e817d3d1.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Borgaon",
+      "pitCount": 318,
+      "actualPitCount": 318,
+      "lat": 19.78611173,
+      "lon": 76.2951019,
+      "bounds": {
+        "minLat": 19.7649491,
+        "maxLat": 19.8101499,
+        "minLon": 76.26403,
+        "maxLon": 76.3066384
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-borgaon-31feee9d.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Warud",
+      "pitCount": 16,
+      "actualPitCount": 16,
+      "lat": 19.78792409,
+      "lon": 76.32624064,
+      "bounds": {
+        "minLat": 19.78771,
+        "maxLat": 19.7881465,
+        "minLon": 76.3260387,
+        "maxLon": 76.3277855
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-warud-974cbc59.json"
+    },
+    {
+      "name": "Devgaon",
+      "pitCount": 41,
+      "actualPitCount": 41,
+      "lat": 19.78928293,
+      "lon": 76.3642439,
+      "bounds": {
+        "minLat": 19.77,
+        "maxLat": 19.8,
+        "minLon": 76.35,
+        "maxLon": 76.39
+      },
+      "pitFile": "devgaon-1c1c246e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Dhagi",
+      "pitCount": 278,
+      "actualPitCount": 278,
+      "lat": 19.78971082,
+      "lon": 76.26599747,
+      "bounds": {
+        "minLat": 19.7783219,
+        "maxLat": 19.8008288,
+        "minLon": 76.2523718,
+        "maxLon": 76.2775349
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-dhagi-68f436d1.json"
+    },
+    {
+      "name": "Ambhora Jahagir",
+      "pitCount": 103,
+      "actualPitCount": 103,
+      "lat": 19.79105056,
+      "lon": 76.33335287,
+      "bounds": {
+        "minLat": 19.68,
+        "maxLat": 19.81,
+        "minLon": 76.27,
+        "maxLon": 76.35
+      },
+      "pitFile": "ambhora-jahagir-daa882f5.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Khambewadi",
+      "pitCount": 231,
+      "actualPitCount": 232,
+      "lat": 19.797321,
+      "lon": 76.24291496,
+      "bounds": {
+        "minLat": 16.5214233,
+        "maxLat": 19.8192333,
+        "minLon": 76.1962167,
+        "maxLon": 76.2539231
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-khambewadi-e6c9b2ba.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Daregaon (Ner)",
+      "pitCount": 11,
+      "actualPitCount": 11,
+      "lat": 19.80361609,
+      "lon": 76.29894811,
+      "bounds": {
+        "minLat": 19.80321758,
+        "maxLat": 19.8042126,
+        "minLon": 76.29836334,
+        "maxLon": 76.29938279
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-daregaon-ner-c3285be1.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Talegaon",
+      "pitCount": 767,
+      "actualPitCount": 768,
+      "lat": 19.80697814,
+      "lon": 76.4011034,
+      "bounds": {
+        "minLat": 19.7986833,
+        "maxLat": 19.819515,
+        "minLon": 76.3926119,
+        "maxLon": 76.4105467
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-talegaon-db6eff73.json"
+    },
+    {
+      "name": "Mahora",
+      "pitCount": 83,
+      "actualPitCount": 83,
+      "lat": 19.80915898,
+      "lon": 76.3438254,
+      "bounds": {
+        "minLat": 19.79,
+        "maxLat": 19.84,
+        "minLon": 76.32,
+        "maxLon": 76.38
+      },
+      "pitFile": "mahora-d25b40f1.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Kehalwadgaon",
+      "pitCount": 22,
+      "actualPitCount": 22,
+      "lat": 19.80935036,
+      "lon": 76.36953839,
+      "bounds": {
+        "minLat": 19.8007057,
+        "maxLat": 19.8268478,
+        "minLon": 76.3261503,
+        "maxLon": 76.382438
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-kehalwadgaon-b9f85b97.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Kolwadi",
+      "pitCount": 271,
+      "actualPitCount": 271,
+      "lat": 19.8111934,
+      "lon": 76.29327356,
+      "bounds": {
+        "minLat": 19.7870899,
+        "maxLat": 19.862565,
+        "minLon": 76.2227752,
+        "maxLon": 76.3120722
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-kolwadi-75c34b82.json"
+    },
+    {
+      "name": "Kehal Wadgaon",
+      "pitCount": 67,
+      "actualPitCount": 67,
+      "lat": 19.8120744,
+      "lon": 76.37668845,
+      "bounds": {
+        "minLat": 19.79,
+        "maxLat": 19.97,
+        "minLon": 76.32,
+        "maxLon": 76.52
+      },
+      "pitFile": "kehal-wadgaon-dba3570e.json"
+    },
+    {
+      "name": "Ambhor Shelke",
+      "pitCount": 1126,
+      "actualPitCount": 1126,
+      "lat": 19.81391075,
+      "lon": 76.4615956,
+      "bounds": {
+        "minLat": 19.789141784409317,
+        "maxLat": 19.84,
+        "minLon": 76.45,
+        "maxLon": 76.48
+      },
+      "pitFile": "ambhor-shelke-d7b5592c.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Pokhari Takle",
+      "pitCount": 31,
+      "actualPitCount": 31,
+      "lat": 19.81993728,
+      "lon": 76.31967858,
+      "bounds": {
+        "minLat": 19.812329,
+        "maxLat": 19.8273564,
+        "minLon": 76.3134931,
+        "maxLon": 76.3288972
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-pokhari-takle-697bdb16.json"
+    },
+    {
+      "name": "Takle Pokhari",
+      "pitCount": 91,
+      "actualPitCount": 91,
+      "lat": 19.81993736,
+      "lon": 76.32107912,
+      "bounds": {
+        "minLat": 19.81,
+        "maxLat": 19.83,
+        "minLon": 76.31,
+        "maxLon": 76.33
+      },
+      "pitFile": "takle-pokhari-4d56fc83.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Mahora",
+      "pitCount": 22,
+      "actualPitCount": 22,
+      "lat": 19.81998585,
+      "lon": 76.3315434,
+      "bounds": {
+        "minLat": 19.8124084,
+        "maxLat": 19.8276434,
+        "minLon": 76.3260617,
+        "maxLon": 76.3402313
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-mahora-ce148a3b.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Andhwadi",
+      "pitCount": 131,
+      "actualPitCount": 131,
+      "lat": 19.82052493,
+      "lon": 76.45264398,
+      "bounds": {
+        "minLat": 19.8152757,
+        "maxLat": 19.82276,
+        "minLon": 76.4346877,
+        "maxLon": 76.4590415
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-andhwadi-0fe88e8a.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Dahifal Khandare",
+      "pitCount": 346,
+      "actualPitCount": 346,
+      "lat": 19.82224736,
+      "lon": 76.42422459,
+      "bounds": {
+        "minLat": 19.8132901,
+        "maxLat": 19.8336167,
+        "minLon": 76.3969074,
+        "maxLon": 76.4521369
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-dahifal-khandare-343b418c.json"
+    },
+    {
+      "name": "Malegaon",
+      "pitCount": 39,
+      "actualPitCount": 39,
+      "lat": 19.82669456,
+      "lon": 76.38995425,
+      "bounds": {
+        "minLat": 19.8,
+        "maxLat": 19.91,
+        "minLon": 76.32,
+        "maxLon": 76.49
+      },
+      "pitFile": "malegaon-cfe494f7.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Warkheda",
+      "pitCount": 270,
+      "actualPitCount": 271,
+      "lat": 19.82783333,
+      "lon": 76.30257951,
+      "bounds": {
+        "minLat": 19.8065917,
+        "maxLat": 19.8473917,
+        "minLon": 76.2896187,
+        "maxLon": 76.317053
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-warkheda-40c043c9.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Nagapur",
+      "pitCount": 6,
+      "actualPitCount": 6,
+      "lat": 19.82966092,
+      "lon": 76.2355841,
+      "bounds": {
+        "minLat": 19.8270347,
+        "maxLat": 19.8337538,
+        "minLon": 76.225422,
+        "maxLon": 76.2490292
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-nagapur-ca2e5cfc.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Uswad (Devthana)",
+      "pitCount": 324,
+      "actualPitCount": 324,
+      "lat": 19.83503872,
+      "lon": 76.46620716,
+      "bounds": {
+        "minLat": 19.8257405,
+        "maxLat": 19.8466577,
+        "minLon": 76.4537351,
+        "maxLon": 76.4916101
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-uswad-devthana-216cdc57.json"
+    },
+    {
+      "name": "Jaipur",
+      "pitCount": 219,
+      "actualPitCount": 219,
+      "lat": 19.83690559,
+      "lon": 76.34558493,
+      "bounds": {
+        "minLat": 19.68,
+        "maxLat": 19.86,
+        "minLon": 76.26,
+        "maxLon": 76.39
+      },
+      "pitFile": "jaipur-d8289ef7.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Hanwat Kheda",
+      "pitCount": 375,
+      "actualPitCount": 375,
+      "lat": 19.83893767,
+      "lon": 76.44382437,
+      "bounds": {
+        "minLat": 19.8274331,
+        "maxLat": 19.8474733333333,
+        "minLon": 76.4330252,
+        "maxLon": 76.4577017
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-hanwat-kheda-da4aa14e.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Erandwadgaon",
+      "pitCount": 53,
+      "actualPitCount": 53,
+      "lat": 19.84373631,
+      "lon": 76.31072948,
+      "bounds": {
+        "minLat": 19.833115,
+        "maxLat": 19.8660832,
+        "minLon": 76.2964654,
+        "maxLon": 76.3544321
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-erandwadgaon-b7fd020f.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Bibi",
+      "pitCount": 184,
+      "actualPitCount": 184,
+      "lat": 19.84975449,
+      "lon": 76.27395037,
+      "bounds": {
+        "minLat": 19.8396845,
+        "maxLat": 19.8549034,
+        "minLon": 76.2637367,
+        "maxLon": 76.2855267
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-bibi-1a5dd234.json"
+    },
+    {
+      "name": "Jambharun",
+      "pitCount": 14,
+      "actualPitCount": 14,
+      "lat": 19.8502563,
+      "lon": 76.40040426,
+      "bounds": {
+        "minLat": 19.84,
+        "maxLat": 19.86,
+        "minLon": 76.36,
+        "maxLon": 76.42
+      },
+      "pitFile": "jambharun-6e1577ba.json"
+    },
+    {
+      "name": "Pasta",
+      "pitCount": 90,
+      "actualPitCount": 90,
+      "lat": 19.85072723,
+      "lon": 76.24268407,
+      "bounds": {
+        "minLat": 19.83,
+        "maxLat": 19.87,
+        "minLon": 76.21,
+        "maxLon": 76.27
+      },
+      "pitFile": "pasta-46139b0b.json"
+    },
+    {
+      "name": "Daha",
+      "pitCount": 85,
+      "actualPitCount": 85,
+      "lat": 19.85330235,
+      "lon": 76.38333647,
+      "bounds": {
+        "minLat": 19.78,
+        "maxLat": 19.86,
+        "minLon": 76.33,
+        "maxLon": 76.4
+      },
+      "pitFile": "daha-4164fa6f.json"
+    },
+    {
+      "name": "Bibi",
+      "pitCount": 19,
+      "actualPitCount": 19,
+      "lat": 19.85356842,
+      "lon": 76.27122632,
+      "bounds": {
+        "minLat": 19.85,
+        "maxLat": 19.86,
+        "minLon": 76.26,
+        "maxLon": 76.27
+      },
+      "pitFile": "bibi-1a852b5e.json"
+    },
+    {
+      "name": "Sawargaon Bhagde",
+      "pitCount": 788,
+      "actualPitCount": 788,
+      "lat": 19.85410461,
+      "lon": 76.26678586,
+      "bounds": {
+        "minLat": 19.828135973300245,
+        "maxLat": 19.89,
+        "minLon": 76.25,
+        "maxLon": 76.28
+      },
+      "pitFile": "sawargaon-bhagde-db4c20d8.json"
+    },
+    {
+      "name": "Kokarsa",
+      "pitCount": 21,
+      "actualPitCount": 21,
+      "lat": 19.85447143,
+      "lon": 76.36578095,
+      "bounds": {
+        "minLat": 19.85,
+        "maxLat": 19.86,
+        "minLon": 76.36,
+        "maxLon": 76.37
+      },
+      "pitFile": "kokarsa-272dcbd7.json"
+    },
+    {
+      "name": "Sondev",
+      "pitCount": 44,
+      "actualPitCount": 44,
+      "lat": 19.85454645,
+      "lon": 76.21442732,
+      "bounds": {
+        "minLat": 19.85,
+        "maxLat": 19.86,
+        "minLon": 76.2,
+        "maxLon": 76.27
+      },
+      "pitFile": "sondev-82aaafda.json"
+    },
+    {
+      "name": "Savargaon Bhagde",
+      "pitCount": 120,
+      "actualPitCount": 120,
+      "lat": 19.85477554,
+      "lon": 76.265431,
+      "bounds": {
+        "minLat": 19.84,
+        "maxLat": 19.88,
+        "minLon": 76.25,
+        "maxLon": 76.33
+      },
+      "pitFile": "savargaon-bhagde-3fb97c31.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Shivnagar",
+      "pitCount": 5,
+      "actualPitCount": 5,
+      "lat": 19.85553531,
+      "lon": 76.33348717,
+      "bounds": {
+        "minLat": 19.8547067,
+        "maxLat": 19.8567433333333,
+        "minLon": 76.330335,
+        "maxLon": 76.3381733333333
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-shivnagar-eee0200a.json"
+    },
+    {
+      "name": "Erandeshwar",
+      "pitCount": 99,
+      "actualPitCount": 99,
+      "lat": 19.85605722,
+      "lon": 76.34739599,
+      "bounds": {
+        "minLat": 19.84,
+        "maxLat": 19.86,
+        "minLon": 76.24,
+        "maxLon": 76.36
+      },
+      "pitFile": "erandeshwar-391e132f.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Kharati",
+      "pitCount": 12,
+      "actualPitCount": 12,
+      "lat": 19.85636517,
+      "lon": 76.48346,
+      "bounds": {
+        "minLat": 19.8562501,
+        "maxLat": 19.8565351,
+        "minLon": 76.4834245,
+        "maxLon": 76.4834926
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-kharati-e79d8353.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Daha",
+      "pitCount": 272,
+      "actualPitCount": 272,
+      "lat": 19.8578228,
+      "lon": 76.38635095,
+      "bounds": {
+        "minLat": 19.8379594,
+        "maxLat": 19.8683297,
+        "minLon": 76.3461139,
+        "maxLon": 76.4159936
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-daha-cfc81db8.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Shivangiri",
+      "pitCount": 196,
+      "actualPitCount": 199,
+      "lat": 19.85792652,
+      "lon": 76.32552464,
+      "bounds": {
+        "minLat": 19.8379625,
+        "maxLat": 19.8755199999999,
+        "minLon": 76.3107517,
+        "maxLon": 76.34698
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-shivangiri-9819fcc7.json"
+    },
+    {
+      "name": "Sondeo",
+      "pitCount": 1130,
+      "actualPitCount": 1130,
+      "lat": 19.85793428,
+      "lon": 76.21877485,
+      "bounds": {
+        "minLat": 19.83,
+        "maxLat": 19.88,
+        "minLon": 76.2,
+        "maxLon": 76.27207311346118
+      },
+      "pitFile": "sondeo-6b1506a2.json"
+    },
+    {
+      "name": "Pashta",
+      "pitCount": 905,
+      "actualPitCount": 905,
+      "lat": 19.85811375,
+      "lon": 76.24266874,
+      "bounds": {
+        "minLat": 19.828211417582757,
+        "maxLat": 20.12,
+        "minLon": 76.22733887904789,
+        "maxLon": 76.38
+      },
+      "pitFile": "pashta-2f9aede4.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Jalna-null-Sondeo",
+      "pitCount": 88,
+      "actualPitCount": 91,
+      "lat": 19.85887638,
+      "lon": 76.22298111,
+      "bounds": {
+        "minLat": 19.8486254,
+        "maxLat": 19.8671746,
+        "minLon": 76.2082386,
+        "maxLon": 76.2444721
+      },
+      "pitFile": "maharashtra-jalna-jalna-null-sondeo-f26024c3.json"
+    },
+    {
+      "name": "Shivgiri",
+      "pitCount": 34,
+      "actualPitCount": 34,
+      "lat": 19.86051484,
+      "lon": 76.3206525,
+      "bounds": {
+        "minLat": 19.85,
+        "maxLat": 19.88,
+        "minLon": 76.23,
+        "maxLon": 76.34
+      },
+      "pitFile": "shivgiri-31831ed0.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Erandeshwar",
+      "pitCount": 5,
+      "actualPitCount": 5,
+      "lat": 19.86497234,
+      "lon": 76.34930132,
+      "bounds": {
+        "minLat": 19.8638217,
+        "maxLat": 19.8657933,
+        "minLon": 76.3458783,
+        "maxLon": 76.3517667
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-erandeshwar-41f131f9.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Kokarasa",
+      "pitCount": 128,
+      "actualPitCount": 128,
+      "lat": 19.86526988,
+      "lon": 76.36739166,
+      "bounds": {
+        "minLat": 19.6709166666666,
+        "maxLat": 19.8713371,
+        "minLon": 76.3583426,
+        "maxLon": 76.4545983333333
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-kokarasa-49eacecc.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Tupa",
+      "pitCount": 27,
+      "actualPitCount": 27,
+      "lat": 19.86672499,
+      "lon": 76.39445087,
+      "bounds": {
+        "minLat": 19.8367066,
+        "maxLat": 19.8795947,
+        "minLon": 76.3693926,
+        "maxLon": 76.4167169
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-tupa-b9976f10.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Belora",
+      "pitCount": 293,
+      "actualPitCount": 298,
+      "lat": 19.87216433,
+      "lon": 76.35519662,
+      "bounds": {
+        "minLat": 19.8562092,
+        "maxLat": 19.8896517,
+        "minLon": 76.3271733,
+        "maxLon": 76.3801983
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-belora-76670116.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Kirla",
+      "pitCount": 133,
+      "actualPitCount": 133,
+      "lat": 19.87382298,
+      "lon": 76.4070853,
+      "bounds": {
+        "minLat": 19.8479663,
+        "maxLat": 19.888725,
+        "minLon": 76.3999183,
+        "maxLon": 76.4245838
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-kirla-26607169.json"
+    },
+    {
+      "name": "Pokhari",
+      "pitCount": 1,
+      "actualPitCount": 1,
+      "lat": 19.8763,
+      "lon": 76.3873,
+      "bounds": {
+        "minLat": 19.88,
+        "maxLat": 19.88,
+        "minLon": 76.39,
+        "maxLon": 76.39
+      },
+      "pitFile": "pokhari-93d67dbf.json"
+    },
+    {
+      "name": "Kendhale Pokhari",
+      "pitCount": 29,
+      "actualPitCount": 29,
+      "lat": 19.88394704,
+      "lon": 76.38138765,
+      "bounds": {
+        "minLat": 19.88,
+        "maxLat": 19.91,
+        "minLon": 76.37,
+        "maxLon": 76.43
+      },
+      "pitFile": "kendhale-pokhari-05032c51.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Talni",
+      "pitCount": 751,
+      "actualPitCount": 751,
+      "lat": 19.88493256,
+      "lon": 76.4695781,
+      "bounds": {
+        "minLat": 19.8555917,
+        "maxLat": 19.9298576,
+        "minLon": 76.4442467,
+        "maxLon": 76.5028104
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-talni-805f484f.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Sirpur",
+      "pitCount": 5,
+      "actualPitCount": 5,
+      "lat": 19.89484574,
+      "lon": 76.44487892,
+      "bounds": {
+        "minLat": 19.8948157,
+        "maxLat": 19.8948583,
+        "minLon": 76.4448517,
+        "maxLon": 76.4449217
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-sirpur-c1ec61e1.json"
+    },
+    {
+      "name": "Vazhar Sarkate",
+      "pitCount": 126,
+      "actualPitCount": 126,
+      "lat": 19.90361667,
+      "lon": 76.36989603,
+      "bounds": {
+        "minLat": 19.89,
+        "maxLat": 19.92,
+        "minLon": 76.35,
+        "maxLon": 76.38
+      },
+      "pitFile": "vazhar-sarkate-5891a378.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Mantha-null-Wadgaon Sarhadu",
+      "pitCount": 164,
+      "actualPitCount": 164,
+      "lat": 19.90888481,
+      "lon": 76.47708687,
+      "bounds": {
+        "minLat": 19.9017189,
+        "maxLat": 19.9153439,
+        "minLon": 76.4646353,
+        "maxLon": 76.4883208
+      },
+      "pitFile": "maharashtra-jalna-mantha-null-wadgaon-sarhadu-b09b00dd.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Badnapur-null-Dagadwadi",
+      "pitCount": 71,
+      "actualPitCount": 71,
+      "lat": 19.95436637,
+      "lon": 75.88540149,
+      "bounds": {
+        "minLat": 19.9526283,
+        "maxLat": 19.9610917,
+        "minLon": 75.8838595,
+        "maxLon": 75.8861817
+      },
+      "pitFile": "maharashtra-jalna-badnapur-null-dagadwadi-87399516.json"
+    },
+    {
+      "name": "Maharashtra-Jalna-Badnapur-null-Asola",
+      "pitCount": 4,
+      "actualPitCount": 4,
+      "lat": 19.95986113,
+      "lon": 75.83532503,
+      "bounds": {
+        "minLat": 19.9596291,
+        "maxLat": 19.9600434,
+        "minLon": 75.8341913,
+        "maxLon": 75.8362071
+      },
+      "pitFile": "maharashtra-jalna-badnapur-null-asola-82dd875e.json"
+    }
+  ]
+}
